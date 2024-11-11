@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="vi" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="geo.region" content="vi">
+    <meta name="language" content="vi">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>LOZIDO - Cài đặt</title>
+    <meta name="keywords"
+        content="Phần mềm nhà trọ, phần mềm phòng trọ, phần mềm quản lý nhà trọ, phần mềm quản lý nhà trọ, quản lý nhà trọ, quản lý trọ, quản lý phòng trọ">
+    <meta name="description"
+        content="Phần mềm quản lý nhà  trọ trên điện thoại, máy tính, máy tính bảng, iPad hỗ trợ chủ nhà quản lý nhà trọ, phòng trọ  dễ dàng và tiện lợi mọi lúc mọi nơi, tiết kiệm thời gian và công sức">
+
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="csrf-token" content="8LFbBW7n259dVTxFnHw0XkN47i2yKrlgcKaYFQT7">
+
+    <meta name="author" content="LOZIDO - Quản lý nhà cho thuê">
+    <meta name="copyright" content="LOZIDO - Quản lý nhà cho thuê - Platform Quan ly nha tro, phong tro">
+    <meta name="abstract" content="Phần mềm quản lý nhà trọ, phòng trọ, ký túc xá, chung cư tốt nhất hiện nay">
+
+    <meta property="og:image" content="https://quanlytro.me/householder-admin/images/lozido_facebook-recovered.jpg">
+    <meta property="og:image:secure_url"
+        content="https://quanlytro.me/householder-admin/images/lozido_facebook-recovered.jpg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="370">
+    <meta property="og:image:type" content="image/webp">
+
+    <link rel="shortcut icon" href="https://quanlytro.me/images/favicon.ico" type="image/x-icon">
+    <link rel="alternate" href="https://quanlytro.me/cai-dat" hreflang="vi-vn" />
+
+    <script type="text/javascript">
+        var recaptcha_site_key = '6Ld0LAYeAAAAABA67PAls5DpnkfNJ-rkgHbsSilR';
+        var __environment = 'production';
+    </script>
+
+     <script src="jquery.min.js"></script>
+    <script src="jquery-ui-1.8.13.min.js"></script>
+    <script src="feather.min.js"></script>
+    <script src="sweetalert2@11"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="helper.js"></script>
+    <script type="text/javascript" src="format.js"></script>
+    <script type="text/javascript" src="route-api.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="transporter.js"></script>
+    <script type="text/javascript" src="upload-image.js"></script>
+    <style>
+        .modal.show .btn-close {
+            outline: 0;
+            box-shadow: 0 0 0 .25rem rgb(255 87 34 / 9%);
+            opacity: 1;
+            border-radius: 100%;
+            padding: 10px;
+        }
+
+        .btn {
+            font-size: 14px !important;
+            font-weight: 600 !important;
+        }
+    </style>
+    <script type="text/javascript">
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        var __current_block = JSON.parse(JSON.stringify({ "id": 6920, "name": "MONIEQEWQ", "name_full": "Nh\u00e0 tr\u1ecd MONIEQEWQ", "user_id": 8168, "category": 0, "category_name": "Nh\u00e0 tr\u1ecd", "category_name_short": "Nh\u00e0 tr\u1ecd", "room_type": "room", "room_type_name": "ph\u00f2ng", "type": "floor", "room_total": 20, "count_floor": 1, "area": 15, "room_amount": 1000, "ele_amount": 0, "water_amount": 0, "price_items_cache": [{ "id": 22810, "name": "Ti\u1ec1n \u0111i\u1ec7n", "type": "constant", "unit": "kwh", "price": 1700, "rooms": { "payload": [{ "id": 100355, "name": "Ph\u00f2ng 1", "sort": null, "value": 100355, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100356, "name": "Ph\u00f2ng 2", "sort": null, "value": 100356, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100357, "name": "Ph\u00f2ng 3", "sort": null, "value": 100357, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100358, "name": "Ph\u00f2ng 4", "sort": null, "value": 100358, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100359, "name": "Ph\u00f2ng 5", "sort": null, "value": 100359, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100360, "name": "Ph\u00f2ng 6", "sort": null, "value": 100360, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100361, "name": "Ph\u00f2ng 7", "sort": null, "value": 100361, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100362, "name": "Ph\u00f2ng 8", "sort": null, "value": 100362, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100363, "name": "Ph\u00f2ng 9", "sort": null, "value": 100363, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100364, "name": "Ph\u00f2ng 10", "sort": null, "value": 100364, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100365, "name": "Ph\u00f2ng 11", "sort": null, "value": 100365, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100366, "name": "Ph\u00f2ng 12", "sort": null, "value": 100366, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100367, "name": "Ph\u00f2ng 13", "sort": null, "value": 100367, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100368, "name": "Ph\u00f2ng 14", "sort": null, "value": 100368, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100369, "name": "Ph\u00f2ng 15", "sort": null, "value": 100369, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100370, "name": "Ph\u00f2ng 16", "sort": null, "value": 100370, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100371, "name": "Ph\u00f2ng 17", "sort": null, "value": 100371, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100372, "name": "Ph\u00f2ng 18", "sort": null, "value": 100372, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100373, "name": "Ph\u00f2ng 19", "sort": null, "value": 100373, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100374, "name": "Ph\u00f2ng 20", "sort": null, "value": 100374, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }] }, "value": null, "frames": [], "status": "is_active", "history": null, "user_id": 8168, "block_id": 6920, "category": "ele", "type_text": "Theo gi\u00e1 tr\u1ecb c\u1ed1 \u0111\u1ecbnh", "unit_text": "KWh", "is_default": 1, "status_text": "\u0110ang s\u1eed d\u1ee5ng", "subtraction": 1 }, { "id": 22811, "name": "Ti\u1ec1n n\u01b0\u1edbc", "type": "constant", "unit": "khoi", "price": 18000, "rooms": { "payload": [{ "id": 100355, "name": "Ph\u00f2ng 1", "sort": null, "value": 100355, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100356, "name": "Ph\u00f2ng 2", "sort": null, "value": 100356, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100357, "name": "Ph\u00f2ng 3", "sort": null, "value": 100357, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100358, "name": "Ph\u00f2ng 4", "sort": null, "value": 100358, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100359, "name": "Ph\u00f2ng 5", "sort": null, "value": 100359, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100360, "name": "Ph\u00f2ng 6", "sort": null, "value": 100360, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100361, "name": "Ph\u00f2ng 7", "sort": null, "value": 100361, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100362, "name": "Ph\u00f2ng 8", "sort": null, "value": 100362, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100363, "name": "Ph\u00f2ng 9", "sort": null, "value": 100363, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100364, "name": "Ph\u00f2ng 10", "sort": null, "value": 100364, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100365, "name": "Ph\u00f2ng 11", "sort": null, "value": 100365, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100366, "name": "Ph\u00f2ng 12", "sort": null, "value": 100366, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100367, "name": "Ph\u00f2ng 13", "sort": null, "value": 100367, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100368, "name": "Ph\u00f2ng 14", "sort": null, "value": 100368, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100369, "name": "Ph\u00f2ng 15", "sort": null, "value": 100369, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100370, "name": "Ph\u00f2ng 16", "sort": null, "value": 100370, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100371, "name": "Ph\u00f2ng 17", "sort": null, "value": 100371, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100372, "name": "Ph\u00f2ng 18", "sort": null, "value": 100372, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100373, "name": "Ph\u00f2ng 19", "sort": null, "value": 100373, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100374, "name": "Ph\u00f2ng 20", "sort": null, "value": 100374, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }] }, "value": null, "frames": [], "status": "is_active", "history": null, "user_id": 8168, "block_id": 6920, "category": "water", "type_text": "Theo gi\u00e1 tr\u1ecb c\u1ed1 \u0111\u1ecbnh", "unit_text": "Kh\u1ed1i", "is_default": 1, "status_text": "\u0110ang s\u1eed d\u1ee5ng", "subtraction": 1 }, { "id": 22834, "name": "Ti\u1ec1n \u0111i\u1ec7n", "type": "constant", "unit": "kwh", "price": 1700, "rooms": { "payload": [{ "id": 100355, "name": "Ph\u00f2ng 1", "sort": null, "value": 100355, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }] }, "value": null, "frames": [], "status": "is_active", "history": null, "user_id": 8168, "block_id": 6920, "category": "other", "type_text": "Theo gi\u00e1 tr\u1ecb c\u1ed1 \u0111\u1ecbnh", "unit_text": "KWh", "is_default": 0, "status_text": "\u0110ang s\u1eed d\u1ee5ng", "subtraction": 0 }], "circle_order": 30, "deadline_bill": 30, "bill_setting": { "note": { "content": null }, "enable_qr": 1, "payment_default": "cash", "show_circle_day": 0, "single_send_zalo": 0, "template_bill_zalo": 1, "enable_rounding_money": 1, "extract_receipt_expense": 0 }, "app_renter_setting": { "allow_update_car": 1, "default_password": 123456789, "allow_close_clock": 0, "auto_create_account": 0, "allow_ticket_contract": 1, "allow_update_customer": 1 }, "room_group": [{ "id": 1, "name": "T\u1ea7ng tr\u1ec7t", "index": 0, "label": "T\u1ea7ng tr\u1ec7t", "value": 1 }], "max_member": 1, "open_door": null, "close_door": null, "rule": null, "extension": null, "data_log": { "id": 6920, "menu_label": { "pay_bill": 0, "room_list": "0\/20", "new_session": 20, "deposit_request": "0\/20", "terminate_contract": "0\/0" }, "block_report": { "id": 6911, "data": null, "block_id": 6920, "call_count": 0, "debt_count": 0, "post_count": 0, "view_count": 0, "empty_count": 20, "active_count": 0, "can_sale_count": 20, "debt_amount_total": 0, "deposit_temp_count": 0, "deposit_amount_total": 0, "male_dormitory_count": 0, "tick_terminate_count": 0, "will_terminate_count": 0, "deposit_contract_count": 0, "female_dormitory_count": 0, "renter_connected_count": 0, "deposit_temp_amount_total": 0, "debt_customer_amount_total": 0, "deposit_contract_amount_total": 0 } }, "setting": { "car_function": 1, "post_function": 1, "agent_function": 1, "asset_function": 1, "price_item_ele": 3, "price_item_wifi": 0, "price_item_trash": 0, "price_item_water": 3, "task_job_function": 1, "send_sms_when_create_bill": 1, "contract_document_function": 0 }, "province_id": 70, "district_id": 693, "ward_id": 25315, "address_component": { "address": "12313123 - \u0110\u01b0\u1eddng Phan \u0110\u00ecnh, Thanh H\u00f2a, B\u00f9 \u0110\u1ed1p, B\u00ecnh Ph\u01b0\u1edbc", "ward_id": "25315", "position": { "latitude": "10.7829132", "longitude": "106.6961898" }, "district_id": "693", "province_id": "70", "address_detail": "12313123 - \u0110\u01b0\u1eddng Phan \u0110\u00ecnh" }, "address": "12313123 - \u0110\u01b0\u1eddng Phan \u0110\u00ecnh, Thanh H\u00f2a, B\u00f9 \u0110\u1ed1p, B\u00ecnh Ph\u01b0\u1edbc", "latitude": 10.7829132, "longitude": 106.6961898, "auto_create_room": 1, "post_ids": [] }));
+
+        var __permission_block = JSON.parse(JSON.stringify(null));
+
+        let user = JSON.parse(JSON.stringify({ "staff": false, "free": false, "trial": true, "fee": false }));
+
+    </script>
+    <link href="bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="common.css" rel="stylesheet">
+    <link href="block.css" rel="stylesheet">
+</head>
+
+<body style="overflow-x: hidden">
+
+    <div id="app_loading" class="text-center" style="padding:40vh 10px">
+        <div class="inner-loading">
+            <img style="margin: auto" src="loading.jpg" alt="Đang tải..."
+                width="50px" />
+            <i class="loading_text" style="font-size: 13px; margin-top: -10px;">Đang tải dữ liệu...</i>
+        </div>
+    </div>
+    <header>
+        <div class="header-inner">
+            <!-- <div class="notification text-center" style="padding: 10px; background-color: #ffe8c8;">
+                LOZIDO đã có thêm tính năng <strong>gửi hóa đơn tự động cho khách qua ZALO và APP dành riêng khách
+                    thuê</strong>. Liên hệ chuyên viên để thêm thông tin qua: <b style="color: #0085ef">HOTLINE:
+                    0965.227.453</b> hoặc chat <a href="https://zalo.me/0965227453" target="_bank"
+                    style="color: #0085ef"><b>ZALO</b></a>
+            </div> -->
+            <div class="header-sticky">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#lozido-main-menu" aria-controls="lozido-main-menu" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"> </span>
+                        </button>
+                        <nav class="collapse navbar-collapse lozido-main-menu">
+                            <ul class="navbar-nav main-menu-left  me-auto mb-2 mb-lg-0">
+                                <!-- <li class="nav-item menu-item active">
+                                    <a href="/" class="nav-link ">
+                                        <i data-feather="arrow-left"></i>
+                                        <img width="180px"
+                                            src="https://quanlytro.me/images/logo-lozido-quan-ly-tro-white.png" />
+                                    </a>
+                                </li> -->
+                            </ul>
+
+                            <ul class="topbar-items main-menu-right navbar-nav">
+                                <li class="nav-item menu-item">
+                                    <a href=index.html class="nav-link ">
+                                        <i data-feather="home"></i>
+                                        <span style="margin-top: 5px" class="text">Quản lý nhà</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item menu-item ">
+                                    <a href="./tong-bao-cao.html" class="nav-link ">
+                                        <i data-feather="pie-chart"></i>
+                                        <span style="margin-top: 5px" class="text">Tổng báo cáo</span>
+                                    </a>
+                                    <!--Đăng tin-->
+                                    <!-- </li>
+                                                                                                                                                                    <li class="nav-item menu-item ">
+                                            <a href="/dang-tin" class="nav-link ">
+                                                <i data-feather="plus"></i>
+                                                <span style="margin-top: 5px" class="text">Đăng tin</span>
+                                            </a>
+                                        </li> -->
+                                    <!--Môi giới-->
+                                    <!-- <li class="nav-item menu-item ">
+                                            <a href="/mo-gioi" class="nav-link ">
+                                                <i data-feather="users"></i>
+                                                <span style="margin-top: 5px" class="text">Môi giới</span>
+                                            </a>
+                                        </li> -->
+    
+                                    <!-- <li class="nav-item menu-item ">
+                                            <a href="/phan-quyen" class="nav-link ">
+                                                <i data-feather="box"></i>
+                                                <span style="margin-top: 5px" class="text">Công ty/nhóm</span>
+                                            </a>
+                                        </li> -->
+                                <li class="nav-item menu-item active ">
+                                    <a href="./cai-dat-chung.html" class="nav-link ">
+                                        <i data-feather="settings"></i>
+                                        <span style="margin-top: 5px" class="text">Cài đặt chung</span>
+                                    </a>
+                                </li>
+    
+                                <li class="nav-item btn-group menu-item ">
+                                    <a href="javascript:;" class="nav-link" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="count-notification badge">0</span>
+                                        <i data-feather="bell"></i>
+                                        <span style="margin-top: 5px" class="text">Thông báo</span>
+                                    </a>
+                                    <ul class="dropdown-menu notication-dropdown dropdown-menu-lg-end">
+                                        <div class="text-center" style="padding: 20px">
+                                            <img style="margin: auto" src="loading.jpg" alt="Đang tải..." width="50px" />
+                                            <div>
+                                                <i class="loading_text" style="font-size: 13px; margin-top: -10px;">Đang tải
+                                                    thông báo...</i>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+    
+                                <li class="nav-item menu-item ">
+                                    <a href="./tai-khoan.html" class="nav-link ">
+                                        <i data-feather="user"></i>
+                                        <span style="margin-top: 5px" class="text">Tài khoản</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item menu-item ">
+                                    <a href="/dang-xuat" class="nav-link ">
+                                        <i data-feather="log-out"></i>
+                                        <span style="margin-top: 5px" class="text">Đăng xuất</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div>
+        <div class="page-setting">
+            <div class="container">
+                <div class="header-item">
+                    <h4 class="title-item">
+                        Cài đặt
+                        <i style="font-size: 14px;
+            font-weight: normal;">Các thiết lập các cài đặt cho tài khoản</i>
+                    </h4>
+                </div>
+                <div class="card-feature overflow-hidden">
+                    <div class="d-flex">
+                        <div class="col-md-3" style="border-right: 1px solid #eee; padding:0">
+                            <!-- Nav tabs -->
+                            <ul class="nav setting-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-bs-toggle="tab" href="#info">
+                                        <i data-feather="user"></i>
+                                        Thông tin đại điện cho hợp đồng
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#contract_template">
+                                        <i data-feather="clipboard"></i>
+                                        Cài đặt mẫu văn bản hợp đồng
+                                    </a>
+                                </li>
+
+                                <li class="nav-item d-none">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#printer">
+                                        <i data-feather="printer"></i>
+                                        Cài đặt máy in
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#notification_setting">
+                                        <i data-feather="bell"></i>
+                                        Cài đặt thông báo
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-9">
+                            <div style="padding: 15px">
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div id="info" class="container tab-pane active"><br>
+                                        <div class="header-item">
+                                            <div>
+                                                <h3>Thông tin đại diện chủ tòa nhà</h3>
+                                                <p>Thông tin dùng làm hợp đồng tạm trú cho khách thuê</p>
+                                            </div>
+                                            <button class="btn btn-primary" id="save-househoder-setting-info">
+                                                <i data-feather="save"></i>
+                                                Lưu thông tin
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <form method="POST" class="needs-validation" id="househoder-setting-info"
+                                                novalidate>
+                                                <div class="row g-2">
+                                                    <div class="col-12">
+                                                        <div class="title-item-small">
+                                                            <b>Thông tin chủ hộ:</b>
+                                                            <i class="des">Thông tin chủ hộ được điền vào tờ khai tạm
+                                                                trú</i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-floating">
+                                                            <select data-format="numeric" id="representative_residence"
+                                                                name="representative_residence"
+                                                                class="form-select form-control" required>
+                                                                <option value="0">Khách thuê lập hộ mới</option>
+                                                                <option value="1">Chủ nhà là đại diện chủ hộ</option>
+                                                            </select>
+                                                            <label for="owner">Chủ hộ</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="title-item-small">
+                                                            <b>Thông tin cơ bản:</b>
+                                                            <i class="des">Các thông tin cơ bản dùng để hiển thị các
+                                                                thông tin đại diện</i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="form-floating">
+                                                            <input data-format="string" type="text" class="form-control"
+                                                                name="name"
+                                                                oninput="this.value = __format.capitalizeFirstStr(this.value)"
+                                                                id="setting_info_name" placeholder="Nhập tên chủ nhà"
+                                                                required>
+                                                            <label for="setting_info_name">Nhập tên đại diện cho các
+                                                                loại giấy tờ</label>
+                                                            <div class="invalid-feedback">
+                                                                Vui lòng nhập tên người đại diện
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="form-floating">
+                                                            <input data-format="stringNumber" type="text"
+                                                                class="form-control" name="phone"
+                                                                id="setting_info_phone"
+                                                                placeholder="Nhập số điện thoại liên hệ" required>
+                                                            <label for="setting_info_phone">Nhập số điện thoại liên
+                                                                hệ</label>
+                                                            <div class="invalid-feedback">
+                                                                Vui lòng nhập số điện thoại
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="input-group">
+                                                            <div class="form-floating">
+                                                                <input data-format="date" type="text"
+                                                                    class="form-control" name="birthday"
+                                                                    id="setting_info_birthday"
+                                                                    placeholder="Nhập ngày/tháng/năm sinh" required>
+                                                                <label for="setting_info_birthday">Nhập ngày/tháng/năm
+                                                                    sinh</label>
+                                                            </div>
+                                                            <label class="input-group-text"
+                                                                for="setting_info_birthday"><i data-feather="calendar">
+                                                                </i></label>
+                                                        </div>
+                                                        <div class="invalid-feedback">
+                                                            Vui lòng nhập ngày sinh
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="title-item-small">
+                                                        <b>Địa chỉ & nghề nghiệp:</b>
+                                                        <i class="des">Thông tin này dùng để hiển thị trong hợp đồng</i>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-floating">
+                                                            <input data-format="string" type="text" class="form-control"
+                                                                name="address" id="setting_info_address"
+                                                                placeholder="Nhập địa chỉ thường trú" required>
+                                                            <label for="setting_info_address">Nhập địa chỉ thường
+                                                                trú</label>
+                                                            <div class="invalid-feedback">
+                                                                Vui lòng nhập địa chỉ thường trú
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-floating">
+                                                            <input data-format="string" type="text" class="form-control"
+                                                                name="job" id="setting_info_job"
+                                                                placeholder="Nhập công việc" required>
+                                                            <label for="setting_info_job">Nhập công việc</label>
+                                                            <div class="invalid-feedback">
+                                                                Vui lòng nhập công việc của bạn
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="title-item-small">
+                                                        <b>Thông tin định danh:</b>
+                                                        <i class="des">Thông tin này dùng để hiển thị trong hợp đồng và
+                                                            cả tạm trú</i>
+                                                    </div>
+
+                                                    <div class="col-4">
+                                                        <div class="form-floating">
+                                                            <input data-format="string" type="text" class="form-control"
+                                                                name="identity_number" id="setting_info_identity_number"
+                                                                placeholder="Nhập mã định danh" required>
+                                                            <label for="setting_info_identity_number">Nhập mã định
+                                                                danh</label>
+                                                            <div class="invalid-feedback">
+                                                                Vui lòng nhập mã định danh
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="form-floating">
+                                                            <input data-format="string" type="text" class="form-control"
+                                                                name="identity_place"
+                                                                oninput="this.value = __format.capitalizeFirstStr(this.value)"
+                                                                id="setting_info_identity_place"
+                                                                placeholder="Nhập nơi cấp" required>
+                                                            <label for="setting_info_identity_place">Nhập nơi
+                                                                cấp</label>
+                                                            <div class="invalid-feedback">
+                                                                Vui lòng nhập nơi cấp mã định danh
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="input-group">
+                                                            <div class="form-floating">
+                                                                <input data-format="date" type="text"
+                                                                    class="form-control" name="identity_date"
+                                                                    id="setting_info_identity_date"
+                                                                    placeholder="Nhập ngày cấp" required>
+                                                                <label for="setting_info_identity_date">Nhập ngày
+                                                                    cấp</label>
+                                                            </div>
+                                                            <label class="input-group-text"
+                                                                for="setting_info_identity_date"><i
+                                                                    data-feather="calendar"> </i></label>
+                                                        </div>
+                                                        <div class="invalid-feedback">
+                                                            Vui lòng nhập ngày cấp mã định danh
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <script type="text/javascript"
+                                        src="https://quanlytro.me/householder-admin/plugins/flatpickr/js/flatpickr-4.6.9.min.js"></script>
+                                    <script type="text/javascript"
+                                        src="https://quanlytro.me/householder-admin/plugins/flatpickr/js/vn.js"></script>
+                                    <link
+                                        href="https://quanlytro.me/householder-admin/plugins/flatpickr/css/flatpickr.min.css"
+                                        rel="stylesheet">
+                                    <script type="text/javascript">
+                                        $(document).ready(function () {
+                                            let __el = {
+                                                form: $('#househoder-setting-info'),
+                                                submit: $('#save-househoder-setting-info')
+                                            };
+
+                                            let oldData = JSON.parse(JSON.stringify(null));
+
+                                            if (oldData) {
+
+                                                if (oldData?.birthday_format)
+                                                    oldData.birthday = oldData.birthday_format;
+
+                                                if (oldData?.identity_date_format)
+                                                    oldData.identity_date = oldData.identity_date_format;
+
+                                                __el.form.setObjectToForm(oldData);
+                                            }
+
+
+                                            flatpickr(__el.form.find('input[name="birthday"]'), {
+                                                allowInput: true,
+                                                enableTime: false,
+                                                dateFormat: "d/m/Y",
+                                                locale: 'vn',
+                                            });
+
+                                            flatpickr(__el.form.find('input[name="identity_date"]'), {
+                                                allowInput: true,
+                                                enableTime: false,
+                                                dateFormat: "d/m/Y",
+                                                locale: 'vn',
+                                            });
+
+                                            __el.submit.click(function (e) {
+                                                let data = __el.form.getObjectOfForm();
+
+                                                if (!__el.form.get(0).checkValidity()) {
+                                                    __el.form.get(0).classList.add('was-validated');
+                                                    Swal.fire({
+                                                        title: 'Thông báo!',
+                                                        text: "Vui lòng nhập đầy đủ thông tin trước khi thực hiện",
+                                                        icon: 'error',
+                                                        confirmButtonText: 'Đã hiểu'
+                                                    });
+                                                    return false;
+                                                }
+
+                                                $.transferData({
+                                                    method: "POST",
+                                                    url: __routeApi.user.updateOrCreateInfo,
+                                                    textLoading: 'Đang lưu thông tin chủ nhà...',
+                                                    data,
+                                                    success: function (res) {
+                                                        Swal.fire({
+                                                            title: 'Thông báo!',
+                                                            text: res.message,
+                                                            icon: 'success',
+                                                            confirmButtonColor: '#3c9e47',
+                                                            confirmButtonText: 'Đóng'
+                                                        });
+                                                    },
+                                                    fail: function (res) {
+                                                        Swal.fire({
+                                                            title: 'Thông báo!',
+                                                            text: res.message,
+                                                            icon: 'error',
+                                                            confirmButtonColor: '#3c9e47',
+                                                            confirmButtonText: 'Đã hiểu'
+                                                        });
+                                                    },
+                                                    error: function (e) {
+                                                        Swal.fire({
+                                                            title: 'Thông báo!',
+                                                            text: "Đã có lỗi xảy ra! " + e,
+                                                            icon: 'error',
+                                                            confirmButtonColor: '#3c9e47',
+                                                            confirmButtonText: 'Đã hiểu'
+                                                        });
+                                                    }
+                                                });
+                                            });
+
+                                        });
+                                    </script>
+                                    <div id="contract_template" class="container tab-pane"><br>
+                                        <div class="header-item">
+                                            <div class="container tab-pane"><br>
+                                                <h3>Danh sách các mẫu hợp đồng đang có</h3>
+                                                <p>Mẫu hợp đồng được sử dụng khi in dựa trên những thông tin bạn nhập
+                                                </p>
+                                            </div>
+                                            <button class="add-round" data-bs-toggle="modal"
+                                                data-bs-target="#contractTemplateModal" id="setting-contract-template">
+                                                <span data-bs-toggle="tooltip" data-bs-placement="left" title=""
+                                                    data-bs-original-title=" Tạo mẫu hợp đồng">
+                                                    <i data-feather="plus"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <div id="list-contract-template" class="row" style="padding: 10px;">
+                                            <table class="table" id="table-contract-template">
+                                                <tr>
+                                                    <td><b>Tên mẫu hợp đồng</b></td>
+                                                    <td><b>Nhà đang áp dụng</b></td>
+                                                    <td><b>Thứ tự sắp xếp</b></td>
+                                                    <td><b>Chỉnh sửa</b></td>
+                                                    <td><b>Xóa</b></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript">
+                                        $(document).ready(function () {
+                                            $('#contract_template').on('click', '.btn-edit', function () {
+                                                let ModalContractTemplate = $($(this).data('bsTarget'));
+                                                ModalContractTemplate &&
+                                                    ModalContractTemplate.data('template', $(this).data('template'));
+                                            })
+
+                                            $('#contract_template').on('click', '.btn-delete', function () {
+                                                Swal.fire({
+                                                    title: 'Thông báo!',
+                                                    text: "Nếu xóa mẫu hợp đồng này, những hợp đồng đang sử dụng mẫu này sẽ bị chuyển về mẫu mặc đinh của hệ thống. Bạn chắc chăn muốn xóa?",
+                                                    icon: 'warning',
+                                                    showCancelButton: true,
+                                                    cancelButtonColor: '#d33',
+                                                    confirmButtonColor: '#3085d6',
+                                                    confirmButtonText: 'Vâng! tôi muốn xóa',
+                                                    cancelButtonText: 'Không xóa'
+                                                }).then((result) => {
+                                                    if (result.isConfirmed) {
+                                                        $.transferData({
+                                                            method: "POST",
+                                                            url: __helper.url.urlPattern(__routeApi.deleteContractTemplate, {
+                                                                template_id: parseInt($(this).data('id'))
+                                                            }),
+                                                            success: (res) => {
+                                                                Swal.fire({
+                                                                    title: 'Thành công!',
+                                                                    text: res.message,
+                                                                    icon: 'success',
+                                                                    confirmButtonColor: '#3c9e47',
+                                                                    confirmButtonText: 'Đóng'
+                                                                }).then((result) => {
+                                                                    $(`#template-${$(this).data('id')}`).remove();
+                                                                });
+                                                            }
+                                                        });
+                                                    }
+                                                });
+                                            })
+                                        });
+                                    </script>
+                                    <!-- Modal deposit temp -->
+                                    <style type="text/css">
+                                        .icon-collapse {
+                                            display: flex;
+                                            justify-content: flex-end;
+                                            padding: 0px
+                                        }
+
+                                        .icon-collapse button {
+                                            border: none;
+                                            background: none;
+                                        }
+
+                                        .tox .tox-tbtn {
+                                            background-color: #fffce5;
+                                            border: 1px solid #000;
+                                            margin-right: 5px;
+                                        }
+
+                                        .mce-content-body {
+                                            margin: 1rem auto 1rem auto !important;
+                                        }
+                                    </style>
+                                    <div class="modal fade" data-bs-backdrop="static" id="contractTemplateModal"
+                                        tabindex="-1" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <div
+                                                        style="margin-right: 15px;outline: 0;box-shadow: 0 0 0 .25rem rgb(76 175 80 / 16%);opacity: 1;border-radius: 100%;width: 36px;height: 36px;justify-content: center;align-items: center;display: flex;background-color: #b1e1b8;">
+                                                        <i data-feather="file-text"> </i>
+                                                    </div>
+                                                    <h5 class="modal-title">Tạo mẫu hợp đồng mới</h5>
+                                                    <div style="margin:-.5rem -.5rem -.5rem auto">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Đóng</button>
+                                                        <button type="button" id="submit-contract-template-form"
+                                                            class="btn btn-primary">
+                                                            Tạo mẫu
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form method="POST" class="needs-validation"
+                                                        id="contract-template-form" novalidate>
+                                                        <input type="hidden" name="_token"
+                                                            value="8LFbBW7n259dVTxFnHw0XkN47i2yKrlgcKaYFQT7">
+                                                        <div class="hide-when-edit">
+                                                            <div class="title-item-small" style="margin-top:-10px;">
+                                                                <b>Chọn nhà trọ</b>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-2 hide-when-edit">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        name="blocks_id[]" id="blocks_id_6920"
+                                                                        value="6920" checked>
+                                                                    <label class="form-check-label"
+                                                                        for="blocks_id_6920">
+                                                                        <b>MONIEQEWQ</b>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mt-2 mb-2">
+                                                            <div class="row g-2">
+                                                                <div class="col-4 mt-2">
+                                                                    <div class="form-floating">
+                                                                        <input type="text" class="form-control"
+                                                                            name="template_name" id="template_name"
+                                                                            placeholder="vd: Mẫu 1, Mẫu 2..." required>
+                                                                        <label for="template_name">Tên mẫu hợp
+                                                                            đồng</label>
+                                                                    </div>
+                                                                    <div class="invalid-feedback">
+                                                                        Vui lòng nhập tên mẫu hợp đồng
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-4 mt-2" id="collapseSort">
+                                                                    <div class="form-floating">
+                                                                        <input type="number" class="form-control"
+                                                                            name="sort" id="template_sort"
+                                                                            placeholder="vd:1,2,3...">
+                                                                        <label for="template_sort">Số thứ tự ưu
+                                                                            tiên</label>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-4 mt-2">
+                                                                    <div class="form-floating">
+                                                                        <input type="text" class="form-control"
+                                                                            name="name" id="name_contract"
+                                                                            placeholder="HỢP ĐỒNG CHO THUÊ PHÒNG TRỌ ..."
+                                                                            required>
+                                                                        <label for="name">Tên hợp đồng</label>
+                                                                    </div>
+                                                                    <div class="invalid-feedback">
+                                                                        Vui lòng nhập tên hợp đồng
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <style>
+                                                            .toolbar-container-sticky {
+                                                                width: 30%;
+                                                                position: fixed !important;
+                                                                left: 50%;
+                                                                bottom: 30px !important;
+                                                                z-index: 1000 !important;
+                                                                /* Ensure it's above other content */
+                                                                background-color: white;
+                                                                /* Match the background color to your needs */
+                                                                transform: translateX(-50%);
+                                                            }
+
+                                                            .tox:not(.tox-tinymce-inline).tox-tinymce--toolbar-bottom .tox-editor-header {
+                                                                border: 1px solid #d5d5d5;
+                                                                box-shadow: none;
+                                                                padding: 8px 0;
+                                                            }
+                                                        </style>
+                                                        <textarea type="text" rows="10" style="min-height: 100px"
+                                                            class="form-control" name="content"
+                                                            id="content-contract" /></textarea>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript"
+                                        src="https://quanlytro.me/householder-admin/plugins/tinymce-6.2.0/tinymce.min.js"></script>
+                                    <script type="text/javascript">
+                                        $(document).ready(function () {
+                                            var __el = {
+                                                form: $('#contract-template-form'),
+                                                modal: $("#contractTemplateModal"),
+                                                submit: $('#submit-contract-template-form'),
+                                            };
+
+                                            let dataTemplate = null;
+                                            let url = __helper.url.urlPattern(__routeApi.createContractTemplate);
+
+                                            const RenderNewRow = (item) => {
+                                                return `<td>${item.template_name}</td>
+                    <td>${item.block.name}</td>
+                    <td>${item.sort}</td>
+                    <td>
+                        <div class="btn-round btn-edit"
+                                data-bs-toggle="modal"
+                                data-bs-target="#contractTemplateModal"
+                                data-template='${(JSON.parse(JSON.stringify(item)))}'>
+                            <div style="width: 100%; height: 100%; align-items: center;
+                            display: inherit;
+                            text-align: center;
+                            justify-content: center; color: #000" data-bs-toggle="tooltip" data-bs-placement="top" title="Chỉnh sửa">
+                                <i data-feather="edit"> </i>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="btn-round btn-delete" data-id="${item.id}" data-bs-toggle="tooltip" data-bs-placement="top" title="Xóa">
+                            <i data-feather="trash-2"> </i>
+                        </div>
+                    </td>`
+                                            }
+
+                                            new __modalForm(
+                                                __el.modal.get(0),
+                                                __el.form.get(0),
+                                                __el.submit.get(0)
+                                            ).start(null, {
+                                                __openModalForm: function () {
+                                                    __el.form.get(0).reset();
+                                                    dataTemplate = __el.modal.data('template');
+
+                                                    if (dataTemplate) {
+                                                        __el.modal.find('.modal-title').text("Chỉnh sửa mẫu hợp đồng");
+                                                        __el.modal.find('#submit-contract-template-form').text("Chỉnh sửa");
+                                                        __el.modal.find('.hide-when-edit').addClass('d-none');
+                                                        url = __helper.url.urlPattern(__routeApi.updateContractTemplate, {
+                                                            template_id: parseInt(dataTemplate.id)
+                                                        });
+                                                        __el.form.setObjectToForm(dataTemplate);
+                                                    } else {
+                                                        __el.modal.find('.hide-when-edit').removeClass("d-none");
+                                                        url = __helper.url.urlPattern(__routeApi.createContractTemplate);
+                                                    }
+
+                                                    tinymce.init({
+                                                        selector: '#content-contract',
+                                                        plugins: [
+                                                            "lists"
+                                                        ],
+                                                        menubar: false,
+                                                        toolbar: 'undo redo | formatting | owner_info renter_info contract_info',
+                                                        toolbar_sticky: true,
+                                                        toolbar_location: 'bottom',
+                                                        toolbar_groups: {
+                                                            formatting: {
+                                                                text: 'DỊNH DẠNG NỘI DUNG',
+                                                                tooltip: 'Formatting',
+                                                                items: 'bold italic alignleft aligncenter alignright | bullist numlist removeformat'
+                                                            },
+                                                            owner_info: {
+                                                                text: 'THÔNG TIN CHỦ NHÀ',
+                                                                tooltip: 'Thông tin chủ nhà',
+                                                                items: '[OwnerName] [OwnerBirthday] [OwnerIdentityNumber] [OwnerIdentityDate] [OwnerIdentityPlace] [OwnerAddress] [OwnerPhone] [BankFullName] [BankShortName] [AccountBankName] [AccountBankNumber]'
+                                                            },
+                                                            renter_info: {
+                                                                text: 'THÔNG TIN KHÁCH THUÊ',
+                                                                tooltip: 'Thông tin khách thuê',
+                                                                items: '[RenterName] [RenterBirthday] [RenterIdentityNumber] [RenterIdentityDate] [RenterIdentityPlace] [RenterAddress] [RenterPhone]'
+                                                            },
+                                                            contract_info: {
+                                                                text: 'THÔNG TIN HỢP ĐỒNG',
+                                                                tooltip: 'Thông tin hợp đồng',
+                                                                items: '[BlockName] [BlockAddress] [RoomName] [area] [CurrentDay] [DateJoin] [ContractDate] [ContractTerminate] [ContractTerm] [ContractAmount] [AmountWords] [ContractDepositAmount] [DepositAmountWords] [ContractCirleDay] [ContractCirleMonth] [CustomerCount] [Cars] [Services] [Assets]'
+                                                            }
+                                                        },
+                                                        height: 900,
+                                                        content_css: 'document',
+                                                        setup: (editor) => {
+                                                            editor.on('init', function () {
+                                                                // Move the toolbar to the fixed container
+                                                                const toolbar = document.querySelector('.tox-editor-header');
+                                                                toolbar.classList.add('toolbar-container-sticky');
+                                                            });
+                                                            editor.ui.registry.addButton('[OwnerName]', {
+                                                                text: 'Tên chủ nhà',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[OwnerName]">Tên chủ nhà</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[OwnerBirthday]', {
+                                                                text: 'Ngày sinh chủ nhà',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[OwnerBirthday]">Ngày sinh chủ nhà</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[OwnerIdentityNumber]', {
+                                                                text: 'Số CMND/CCCD của chủ nhà',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[OwnerIdentityNumber]">Số CMND/CCCD của chủ nhà</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[OwnerIdentityDate]', {
+                                                                text: 'Ngày cấp',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[OwnerIdentityDate]">Ngày cấp</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[OwnerIdentityPlace]', {
+                                                                text: 'Nơi cấp',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[OwnerIdentityPlace]">Nơi cấp</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[OwnerAddress]', {
+                                                                text: 'Địa chỉ của chủ nhà',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[OwnerAddress]">Địa chỉ của chủ nhà</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[OwnerPhone]', {
+                                                                text: 'SĐT của chủ nhà',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[OwnerPhone]">SĐT của chủ nhà</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[BankFullName]', {
+                                                                text: 'Tên ngân hàng đầy đủ',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[BankFullName]">Tên ngân hàng đầy đủ</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[BankShortName]', {
+                                                                text: 'Tên ngân hàng viết tắt',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[BankShortName]">Tên ngân hàng viết tắt</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[AccountBankName]', {
+                                                                text: 'Tên chủ tài khoản ngân hàng',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[AccountBankName]">Tên chủ tài khoản ngân hàng</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[AccountBankNumber]', {
+                                                                text: 'Số tài khoản ngân hàng',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[AccountBankNumber]">Số tài khoản ngân hàng</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[RenterName]', {
+                                                                text: 'Tên khách thuê',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[RenterName]">Tên khách thuê</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[RenterBirthday]', {
+                                                                text: 'Ngày sinh khách thuê',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[RenterBirthday]">Ngày sinh khách thuê</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[RenterIdentityNumber]', {
+                                                                text: 'Số CMND/CCCD của khách thuê',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[RenterIdentityNumber]">Số CMND/CCCD của khách thuê</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[RenterIdentityDate]', {
+                                                                text: 'Ngày cấp',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[RenterIdentityDate]">Ngày cấp</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[RenterIdentityPlace]', {
+                                                                text: 'Nơi cấp',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[RenterIdentityPlace]">Nơi cấp</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[RenterAddress]', {
+                                                                text: 'Địa chỉ của khách thuê',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[RenterAddress]">Địa chỉ của khách thuê</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[RenterPhone]', {
+                                                                text: 'SĐT của khách thuê',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[RenterPhone]">SĐT của khách thuê</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[BlockName]', {
+                                                                text: 'Tên nhà trọ',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[BlockName]">Tên nhà trọ</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[BlockAddress]', {
+                                                                text: 'Địa chỉ nhà cho thuê',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[BlockAddress]">Địa chỉ nhà cho thuê</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[RoomName]', {
+                                                                text: 'Tên/Số phòng',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[RoomName]">Tên/Số phòng</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[area]', {
+                                                                text: 'Diện tích phòng',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[area]">Diện tích phòng</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[CurrentDay]', {
+                                                                text: 'Ngày hiện tại',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+                                                                    editor.insertContent(`<time>${(new Date()).toLocaleDateString()}</time>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[DateJoin]', {
+                                                                text: 'Ngày bàn giao phòng',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[DateJoin]">Ngày bàn giao phòng</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[ContractDate]', {
+                                                                text: 'Ngày ký hợp đồng',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[ContractDate]">Ngày ký hợp đồng</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[ContractTerminate]', {
+                                                                text: 'Ngày kết thúc hợp đồng',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[ContractTerminate]">Ngày kết thúc hợp đồng</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[ContractTerm]', {
+                                                                text: 'Thời hạn hợp đồng (tháng)',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[ContractTerm]">Thời hạn hợp đồng (tháng)</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[ContractAmount]', {
+                                                                text: 'Giá thuê trên hợp đồng',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[ContractAmount]">Giá thuê trên hợp đồng</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[AmountWords]', {
+                                                                text: 'Số tiền thuê ghi bằng chữ',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[AmountWords]">Số tiền thuê ghi bằng chữ</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[ContractDepositAmount]', {
+                                                                text: 'Số tiền đặt cọc',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[ContractDepositAmount]">Số tiền đặt cọc</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[DepositAmountWords]', {
+                                                                text: 'Số tiền đặt cọc ghi bằng chữ',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[DepositAmountWords]">Số tiền đặt cọc ghi bằng chữ</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[ContractCirleDay]', {
+                                                                text: 'Ngày thu tiền của phòng/giường',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[ContractCirleDay]">Ngày thu tiền của phòng/giường</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[ContractCirleMonth]', {
+                                                                text: 'Chu kỳ thu tiền',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[ContractCirleMonth]">Chu kỳ thu tiền</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[CustomerCount]', {
+                                                                text: 'Số người ở tối đa',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[CustomerCount]">Số người ở tối đa</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[Cars]', {
+                                                                text: 'Danh sách xe của phòng',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[Cars]">Danh sách xe của phòng</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[Services]', {
+                                                                text: 'Dịch vụ phòng sử dụng',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[Services]">Dịch vụ phòng sử dụng</span>`);
+
+                                                                }
+                                                            });
+                                                            editor.ui.registry.addButton('[Assets]', {
+                                                                text: 'Tài sản phòng sử dụng',
+                                                                classes: 'button-macro',
+                                                                onAction: (e) => {
+
+                                                                    editor.insertContent(`<span contentEditable="false" class="macro-contract" data-macro="[Assets]">Tài sản phòng sử dụng</span>`);
+
+                                                                }
+                                                            });
+                                                        },
+
+                                                        content_style: `body { 
+                                font-family:Helvetica,Arial,sans-serif;
+                                font-size:16px 
+                            } 
+                            .macro-contract{
+                                border-radius: 3px;
+                                background-color: #ffeb3b;
+                                padding: 0px 3px;
+                                text-decoration: underline;
+                                font-style: italic;
+                                font-size: 15px;
+                            }`
+                                                    });
+                                                    tinymce.get("content-contract").setContent(dataTemplate ? dataTemplate['content'] : '');
+
+                                                },
+                                                __closeModalForm: function () {
+                                                    __el.form.get(0).reset();
+                                                    __el.form.get(0).classList.remove('was-validated');
+
+                                                    __el.modal.data('template', null);
+                                                    __el.modal.find('.modal-title').text("Tạo mẫu hợp đồng mới");
+                                                    __el.modal.find('#submit-contract-template-form').text("Tạo mẫu");
+                                                },
+                                                __submitModalForm: function (e) {
+                                                    let data = __el.form.getObjectOfForm();
+                                                    if (!__el.form.get(0).checkValidity()) {
+                                                        __el.modal.find('.collapse').addClass('show');
+                                                        __el.form.get(0).classList.add('was-validated');
+                                                        Swal.fire({
+                                                            title: 'Thông báo!',
+                                                            text: "Vui lòng nhập đầy đủ thông tin trước khi thực hiện",
+                                                            icon: 'error',
+                                                            confirmButtonText: 'Đã hiểu'
+                                                        });
+                                                        return false;
+                                                    }
+
+                                                    data["content"] = tinymce.get("content-contract").getContent()
+
+                                                    $.transferData({
+                                                        method: "POST",
+                                                        url,
+                                                        data,
+                                                        success: function (res) {
+                                                            Swal.fire({
+                                                                title: 'Thành công!',
+                                                                text: res.message,
+                                                                icon: 'success',
+                                                                confirmButtonColor: '#3c9e47',
+                                                                confirmButtonText: 'Đóng'
+                                                            }).then((result) => {
+                                                                bootstrap.Modal.getInstance(__el.modal.get(0)).hide();
+                                                            });
+
+                                                            if (res.data?.payload) {
+                                                                $.each(res.data.payload, function (key, item) {
+                                                                    let newRow = $(`<tr id="template-${item.id}"></tr>`);
+                                                                    newRow.html(RenderNewRow(item));
+                                                                    $("#contract_template > #list-contract-template > #table-contract-template > tbody").append(newRow);
+                                                                });
+                                                            } else {
+                                                                if (res?.data && $(`#template-${res.data.id}`).length)
+                                                                    $("#contract_template > #list-contract-template > #table-contract-template > tbody").find(`#template-${res.data.id}`).html(RenderNewRow(res.data));
+                                                            }
+                                                        },
+                                                        fail: (res) => {
+                                                            Swal.fire({
+                                                                title: 'Thông báo!',
+                                                                text: res.message,
+                                                                icon: 'error',
+                                                                confirmButtonText: 'Đã hiểu'
+                                                            });
+                                                        }
+                                                    });
+                                                },
+                                            });
+
+
+                                        })
+                                    </script>
+
+
+                                    <div id="notification_setting" class="container tab-pane fade"><br>
+                                        <h3>Cài đặt thông báo</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Modal deposit temp -->
+        <div class="modal fade" data-bs-backdrop="static" id="bankModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div
+                            style="margin-right: 15px;outline: 0;box-shadow: 0 0 0 .25rem rgb(76 175 80 / 16%);opacity: 1;border-radius: 100%;width: 36px;height: 36px;justify-content: center;align-items: center;display: flex;background-color: #b1e1b8;">
+                            <i data-feather="gift"> </i>
+                        </div>
+                        <h5 class="modal-title">Thêm tài khoản ngân hàng</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="POST" class="needs-validation" id="bank-form" novalidate>
+                            <input type="hidden" name="_token" value="8LFbBW7n259dVTxFnHw0XkN47i2yKrlgcKaYFQT7">
+                            <div class="row g-2">
+                                <div class="col-12">
+                                    <div class="title-item-small">
+                                        <b>Thông tin ngân hàng</b>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-floating">
+                                        <select id="max_member" name="bank_id" id="bank_id"
+                                            class="form-select form-control">
+                                            <option value="970415">Ngân hàng TMCP Công thương Việt Nam - VietinBank
+                                            </option>
+                                            <option value="970436">Ngân hàng TMCP Ngoại Thương Việt Nam - Vietcombank
+                                            </option>
+                                            <option value="970418">Ngân hàng TMCP Đầu tư và Phát triển Việt Nam - BIDV
+                                            </option>
+                                            <option value="970405">Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt
+                                                Nam - Agribank</option>
+                                            <option value="970422">Ngân hàng TMCP Quân đội - MBBank</option>
+                                            <option value="970407">Ngân hàng TMCP Kỹ thương Việt Nam - Techcombank
+                                            </option>
+                                            <option value="970448">Ngân hàng TMCP Phương Đông - OCB</option>
+                                            <option value="970416">Ngân hàng TMCP Á Châu - ACB</option>
+                                            <option value="970432">Ngân hàng TMCP Việt Nam Thịnh Vượng - VPBank</option>
+                                            <option value="970423">Ngân hàng TMCP Tiên Phong - TPBank</option>
+                                            <option value="970403">Ngân hàng TMCP Sài Gòn Thương Tín - Sacombank
+                                            </option>
+                                            <option value="970437">Ngân hàng TMCP Phát triển Thành phố Hồ Chí Minh -
+                                                HDBank</option>
+                                            <option value="970454">Ngân hàng TMCP Bản Việt - VietCapitalBank</option>
+                                            <option value="970429">Ngân hàng TMCP Sài Gòn - SCB</option>
+                                            <option value="970441">Ngân hàng TMCP Quốc tế Việt Nam - VIB</option>
+                                            <option value="970443">Ngân hàng TMCP Sài Gòn - Hà Nội - SHB</option>
+                                            <option value="970431">Ngân hàng TMCP Xuất Nhập khẩu Việt Nam - Eximbank
+                                            </option>
+                                            <option value="970426">Ngân hàng TMCP Hàng Hải - MSB</option>
+                                            <option value="546034">TMCP Việt Nam Thịnh Vượng - Ngân hàng số CAKE by
+                                                VPBank - CAKE</option>
+                                            <option value="546035">TMCP Việt Nam Thịnh Vượng - Ngân hàng số Ubank by
+                                                VPBank - Ubank</option>
+                                            <option value="971005">Viettel Money - ViettelMoney</option>
+                                            <option value="971011">VNPT Money - VNPTMoney</option>
+                                            <option value="970400">Ngân hàng TMCP Sài Gòn Công Thương - SaigonBank
+                                            </option>
+                                            <option value="970409">Ngân hàng TMCP Bắc Á - BacABank</option>
+                                            <option value="970412">Ngân hàng TMCP Đại Chúng Việt Nam - PVcomBank
+                                            </option>
+                                            <option value="970414">Ngân hàng Thương mại TNHH MTV Đại Dương - Oceanbank
+                                            </option>
+                                            <option value="970419">Ngân hàng TMCP Quốc Dân - NCB</option>
+                                            <option value="970424">Ngân hàng TNHH MTV Shinhan Việt Nam - ShinhanBank
+                                            </option>
+                                            <option value="970425">Ngân hàng TMCP An Bình - ABBANK</option>
+                                            <option value="970427">Ngân hàng TMCP Việt Á - VietABank</option>
+                                            <option value="970428">Ngân hàng TMCP Nam Á - NamABank</option>
+                                            <option value="970430">Ngân hàng TMCP Xăng dầu Petrolimex - PGBank</option>
+                                            <option value="970433">Ngân hàng TMCP Việt Nam Thương Tín - VietBank
+                                            </option>
+                                            <option value="970438">Ngân hàng TMCP Bảo Việt - BaoVietBank</option>
+                                            <option value="970440">Ngân hàng TMCP Đông Nam Á - SeABank</option>
+                                            <option value="970446">Ngân hàng Hợp tác xã Việt Nam - COOPBANK</option>
+                                            <option value="970449">Ngân hàng TMCP Bưu Điện Liên Việt - LienVietPostBank
+                                            </option>
+                                            <option value="970452">Ngân hàng TMCP Kiên Long - KienLongBank</option>
+                                            <option value="668888">Ngân hàng Đại chúng TNHH Kasikornbank - KBank
+                                            </option>
+                                            <option value="970421">Ngân hàng Liên doanh Việt - Nga - VRB</option>
+                                            <option value="970410">Ngân hàng TNHH MTV Standard Chartered Bank Việt Nam -
+                                                StandardChartered</option>
+                                            <option value="801011">Ngân hàng Nonghyup - Chi nhánh Hà Nội - Nonghyup
+                                            </option>
+                                            <option value="970434">Ngân hàng TNHH Indovina - IndovinaBank</option>
+                                            <option value="970456">Ngân hàng Công nghiệp Hàn Quốc - Chi nhánh TP.
+                                                Hồ Chí Minh - IBKHCM</option>
+                                            <option value="970463">Ngân hàng Kookmin - Chi nhánh Thành phố Hồ Chí Minh -
+                                                KookminHCM</option>
+                                            <option value="970462">Ngân hàng Kookmin - Chi nhánh Hà Nội - KookminHN
+                                            </option>
+                                            <option value="970457">Ngân hàng TNHH MTV Woori Việt Nam - Woori</option>
+                                            <option value="458761">Ngân hàng TNHH MTV HSBC (Việt Nam) - HSBC</option>
+                                            <option value="970444">Ngân hàng Thương mại TNHH MTV Xây dựng Việt Nam -
+                                                CBBank</option>
+                                            <option value="970455">Ngân hàng Công nghiệp Hàn Quốc - Chi nhánh Hà
+                                                Nội - IBKHN</option>
+                                            <option value="422589">Ngân hàng TNHH MTV CIMB Việt Nam - CIMB</option>
+                                            <option value="796500">DBS Bank Ltd - Chi nhánh Thành phố Hồ Chí Minh -
+                                                DBSBank</option>
+                                            <option value="970406">Ngân hàng TMCP Đông Á - DongABank</option>
+                                            <option value="970408">Ngân hàng Thương mại TNHH MTV Dầu Khí Toàn Cầu -
+                                                GPBank</option>
+                                            <option value="970439">Ngân hàng TNHH MTV Public Việt Nam - PublicBank
+                                            </option>
+                                            <option value="970458">Ngân hàng United Overseas - Chi nhánh TP. Hồ Chí Minh
+                                                - UnitedOverseas</option>
+                                            <option value="970442">Ngân hàng TNHH MTV Hong Leong Việt Nam - HongLeong
+                                            </option>
+                                        </select>
+                                        <label for="bank_id">Tên ngân hàng</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" name="branch" id="branch"
+                                            placeholder="Chi nhánh ngân hàng">
+                                        <label for="branch">Chi nhánh ngân hàng</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="title-item-small">
+                                        <b>Thông tin tài khoản</b>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-2">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" name="account_name" id="account_name"
+                                            required placeholder="Tên chủ tài khoản"
+                                            oninput="this.value = __format.capitalizeFulltStr(this.value)"
+                                            maxlength="50">
+                                        <label for="account_name">Tên chủ tài khoản</label>
+                                        <div class="invalid-feedback">
+                                            Vui lòng nhập tiêu đề
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-2">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" name="account_number"
+                                            id="account_number" required placeholder="Số tài khoản">
+                                        <label for="account_number">Số tài khoản</label>
+                                        <div class="invalid-feedback">
+                                            Vui lòng nhập tiêu đề
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" value="1" id="is_default"
+                                            name="is_default" checked>
+                                        <label class="form-check-label" for="is_default">
+                                            <b>Chọn tài khoản mặc định</b>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer modal-footer--sticky">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                        <button type="button" id="submit-bank-form" class="btn btn-primary">
+                            Thêm tài khoản ngân hàng
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                let __el = {
+                    form: $('#bank-form'),
+                    modal: $("#bankModal"),
+                    submit: $('#submit-bank-form')
+                };
+
+                let target = 'user';
+                let dataBank = null;
+                let api = __helper.url.urlPattern(__routeApi.user.addBank);
+                new __modalForm(
+                    __el.modal.get(0),
+                    __el.form.get(0),
+                    __el.submit.get(0)
+                ).start(null, {
+                    __openModalForm: function ({ relatedTarget }) {
+                        __el.form.get(0).reset();
+                        dataBank = __el.modal.data('bank');
+                        target = $(relatedTarget).data('target');
+                        if (dataBank) {
+                            __el.modal.find('.modal-title').text("Chỉnh sửa khoản ngân hàng");
+                            __el.modal.find('.modal-footer .btn-primary').text("Chỉnh sửa");
+
+                            if (target === 'company')
+                                api = __helper.url.urlPattern(__routeApi.company.updateBank);
+                            else
+                                api = __helper.url.urlPattern(__routeApi.user.updateBank);
+
+                            __el.form.setObjectToForm(dataBank.data);
+                        } else {
+                            if (target === 'company')
+                                api = __helper.url.urlPattern(__routeApi.company.addBank);
+                            else
+                                api = __helper.url.urlPattern(__routeApi.user.addBank);
+                        }
+                    },
+                    __closeModalForm: function () {
+                        __el.form.get(0).reset();
+                        __el.form.get(0).classList.remove('was-validated');
+                        __el.modal.data('bank', null);
+                        __el.modal.find('.modal-title').text("Thêm tài khoản ngân hang");
+                        __el.modal.find('.modal-footer .btn-primary').text("Thêm");
+                    },
+                    __submitModalForm: function () {
+                        let data = __el.form.getObjectOfForm();
+                        if (!__el.form.get(0).checkValidity()) {
+                            __el.form.get(0).classList.add('was-validated');
+                            Swal.fire({
+                                title: 'Thông báo!',
+                                text: "Vui lòng nhập đầy đủ thông tin trước khi thực hiện",
+                                icon: 'error',
+                                confirmButtonText: 'Đã hiểu'
+                            });
+                            return false;
+                        }
+
+                        if (dataBank)
+                            data.id = dataBank.id;
+
+                        let bank_name = $('select[name="bank_id"] option:selected').text();
+
+                        if (!bank_name) {
+                            Swal.fire({
+                                title: 'Thông báo!',
+                                text: "Vui lòng chọn ngân hàng",
+                                icon: 'error',
+                                confirmButtonText: 'Đã hiểu'
+                            });
+                            return false;
+                        }
+
+                        let __split = bank_name.match(/(.+)\-(.+)/);
+
+                        data.bank_name = __split[1].trim();
+                        data.short_name = __split[2].trim();
+
+                        $.transferData({
+                            method: "POST",
+                            url: api,
+                            data,
+                            success: function (res) {
+                                let new_data = res.data.new_bank;
+                                Swal.fire({
+                                    title: 'Thành công!',
+                                    text: res.message,
+                                    icon: 'success',
+                                    confirmButtonColor: '#3c9e47',
+                                    confirmButtonText: 'Đã hiểu'
+                                }).then((result) => {
+                                    bootstrap.Modal.getInstance(__el.modal.get(0)).hide();
+                                });
+
+                                let newHtml = ` <td>${new_data.data.account_name}</td>
+                                        <td>${new_data.data.account_number}</td>
+                                        <td data-bs-toggle="tooltip" data-bs-original-title="${new_data.data.bank_name}" >${new_data.data.short_name}</td>
+                                        <td>
+                                            <div class="btn-round btn-edit"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#bankModal" data-target='${target}'
+                                                    data-bank='${(JSON.stringify(new_data))}' style="width: 25px!important;height: 25px!important">
+                                                <div style="width: 100%; height: 100%; align-items: center;
+                                                display: inherit;
+                                                text-align: center;
+                                                justify-content: center; color: #000" data-bs-toggle="tooltip" data-bs-placement="top" title="Chỉnh sửa">
+                                                    <i data-feather="edit"> </i>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="btn-round btn-delete" data-id="${new_data.id}" data-bs-toggle="tooltip" data-bs-placement="top" title="Xóa" style="width: 25px!important;height: 25px!important">
+                                                <i data-feather="trash-2"> </i>
+                                            </div>
+                                        </td>`
+
+                                if (dataBank) {
+                                    if ($(`#bank-${new_data.id}`).length) {
+                                        $("#banks > .row > #table-banks > tbody").find(`#bank-${new_data.id}`).html(newHtml);
+                                    }
+                                } else {
+                                    $("#banks > .row > #table-banks > tbody").append(`
+                            <tr id="bank-${new_data.id}">
+                                ${newHtml}}
+                            </tr>`);
+                                }
+                            },
+                            fail: (res) => {
+                                Swal.fire({
+                                    title: 'Thông báo!',
+                                    text: res.message,
+                                    icon: 'error',
+                                    confirmButtonText: 'Đã hiểu'
+                                });
+                            }
+                        });
+                    },
+                });
+            })
+        </script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                if (window.location.hash !== '') {
+                    var triggerEl = document.querySelector(`.setting-tabs a[href="${window.location.hash}"]`)
+                    var tab = new bootstrap.Tab(triggerEl);
+                    tab.show();
+                }
+            });
+        </script>
+    </div>
+    <div class="text-center mt-5"><span style="color: #727272; font-style: italic;">Copyright @ <strong
+                style="color: #000">LOZIDO - Quản lý nhà cho thuê</strong> 2020</span></div>
+    <div class="text-center">
+        <p style="color: #727272; font-style: italic;">Version <strong style="color: #000">1.3.8</strong></p>
+    </div>
+    <div class="zalo-container fix item-contact">
+        <a id="zalo-btn" href="https://zalo.me/0965227453" target="_blank" rel="noopener">
+            <div class="animated_zalo infinite zoomIn_zalo cmoz-alo-circle"></div>
+            <div class="animated_zalo infinite pulse_zalo cmoz-alo-circle-fill"></div>
+            <span>
+                <img width="100%" src="https://quanlytro.me/images/icons/zalo-icon-white.webp"
+                    alt="Liên hệ với LOZIDO - Quản lý nhà cho thuê qua Zalo">
+            </span>
+        </a>
+    </div>
+
+    <script>
+        feather.replace();
+
+        $(document).ready(function () {
+            $(document).find('input[data-format="numeric"][type="text"]').map((key, element) => {
+                element.addEventListener('keyup', e => {
+                    let value = $(element).val();
+                    let number = __helper.convertStringToNumber(value);
+                    let newVal = __format.currencyInput(number);
+
+                    $(element).val(value === '' ? '' : isNaN(number) ? '' : newVal);
+                });
+            });
+
+            $(document).find('input[data-format="stringNumber"]').map((key, element) => {
+                element.addEventListener('keyup', e => {
+                    $(element).val(__format.phone($(element).val()));
+                });
+            });
+
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            });
+
+            setTimeout(() => {
+                $.transferData({
+                    url: __helper.url.urlPattern(__routeApi.notification.all, {
+                        page: 1
+                    }),
+                    loadingEle: false,
+                    success: (res) => {
+                        $('.count-notification').text(res?.data?.unread_count ?? 0);
+                        res?.data?.notifications?.length > 0 &&
+                            $(".notication-dropdown").html('') &&
+                            res.data.notifications.map((notification) => {
+                                $(".notication-dropdown").append($(`
+                                <li style="cursor: pointer" class="item-notication d-flex align-items-center">
+                                        <div class="icon ${!notification?.read_at ? 'not-read' : ''}">
+                                            <i data-feather="bell" size="20"></i>
+                                        </div>
+                                        <div class="content">
+                                            <div class="des">
+                                                <b>
+                                                    ${notification?.data?.title ?? ''}
+                                                </b>
+                                                <p>${notification?.data?.body ?? ''}</p>
+                                            </div>
+                                            <div class="time">${notification?.created_at ?? ''}</div>
+                                        </div>
+                                </li>
+                            `).click((e) => {
+                                    Swal.fire({
+                                        title: 'Thông báo!',
+                                        text: "Tính năng đi đến thông báo đang phát triển. Hệ thống sẽ hoàn thành sớm!",
+                                        icon: 'warning',
+                                        confirmButtonText: 'Đã hiểu'
+                                    });
+                                }));
+                            });
+                        feather.replace();
+                    },
+                    fail: (res) => {
+
+                    }
+                });
+            }, 5000);
+
+        });
+    </script>
+</body>
+
+</html>

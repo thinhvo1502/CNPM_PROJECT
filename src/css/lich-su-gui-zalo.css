@@ -1,0 +1,87 @@
+
+.month-bar-container {
+    display: flex;   /*  flex*/
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.year-nav {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.month-list {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;  /* Cho phép scroll ngang */
+    gap: 10px;
+    padding: 0 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #cccccc #f5f5f5;
+    width: 100%;
+}
+
+.month-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-basis: 30%; /* Sử dụng flex-basis để chỉ định kích thước theo % */
+    border-radius: 8px;
+    background-color: #fff;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    cursor: pointer;
+}
+
+.month-item.active {
+    border: 2px solid #4CAF50;
+    background-color: #e6fff2;
+}
+
+.month-item span {
+    font-weight: bold;
+}
+
+.month-item small {
+    font-size: 12px;
+    color: #777;
+}
+#zalo-table {
+    width: 100%;
+    /* background-color:aquamarine; */
+    /* color: black; */
+}
+.tabulator .tabulator-tableholder .tabulator-placeholder .tabulator-placeholder-contents {
+    color: black;
+}
+.tabulator .tabulator-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Căn giữa theo chiều ngang và dọc cho tất cả các ô trong bảng Tabulator */
+
+.retry-btn {
+    background-color: #1175c6;
+    border: 0px solid #1175c6;
+    background-image: (to right, #0dcaf0, #1175c6);
+    padding: 10px;
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.retry-btn:hover {
+    background-color: #218838; /* Màu xanh lá đậm khi hover */
+}

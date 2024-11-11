@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="vi" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="geo.region" content="vi">
+    <meta name="language" content="vi">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>LOZIDO - Tất cả phiếu thu tiền nhà(hóa đơn)</title>
+    <meta name="keywords"
+        content="Phần mềm nhà trọ, phần mềm phòng trọ, phần mềm quản lý nhà trọ, phần mềm quản lý nhà trọ, quản lý nhà trọ, quản lý trọ, quản lý phòng trọ">
+    <meta name="description"
+        content="Phần mềm quản lý nhà  trọ trên điện thoại, máy tính, máy tính bảng, iPad hỗ trợ chủ nhà quản lý nhà trọ, phòng trọ, ký túc xá dễ dàng và tiện lợi mọi lúc mọi nơi, tiết kiệm thời gian và công sức">
+
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="csrf-token" content="kxYQeI0VRTTSOTGg7403Q8D94othHXKBNy8OQWXf">
+
+    <meta name="author" content="LOZIDO - Quản lý nhà cho thuê">
+    <meta name="copyright" content="LOZIDO - Quản lý nhà cho thuê - Platform Quan ly nha tro, phong tro">
+    <meta name="abstract" content="Phần mềm quản lý nhà trọ, phòng trọ, ký túc xá, chung cư tốt nhất hiện nay">
+
+    <meta property="og:image" content="https://quanlytro.me/householder-admin/images/lozido_facebook-recovered.jpg">
+    <meta property="og:image:secure_url"
+        content="https://quanlytro.me/householder-admin/images/lozido_facebook-recovered.jpg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="370">
+    <meta property="og:image:type" content="image/webp">
+
+    <link rel="shortcut icon" href="https://quanlytro.me/images/favicon.ico" type="image/x-icon">
+    <link rel="alternate" href="https://quanlytro.me/quan-ly/6920/quan-ly-tai-san" hreflang="vi-vn" />
+
+    <script type="text/javascript">
+        var recaptcha_site_key = '6Ld0LAYeAAAAABA67PAls5DpnkfNJ-rkgHbsSilR';
+        var __environment = 'production';
+    </script>
+
+    <script src="jquery.min.js"></script>
+    <script src="jquery-ui-1.8.13.min.js"></script>
+    <script src="feather.min.js"></script>
+    <script src="sweetalert2@11"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="helper.js?"></script>
+    <script type="text/javascript" src="format.js"></script>
+    <script type="text/javascript" src="route-api.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="transporter.js"></script>
+    <script type="text/javascript" src="upload-image.js"></script>
+    <link href="https://unpkg.com/tabulator-tables@6.3.0/dist/css/tabulator.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@6.3.0/dist/js/tabulator.min.js"></script>
+    <style>
+        .modal.show .btn-close {
+            outline: 0;
+            box-shadow: 0 0 0 .25rem rgb(255 87 34 / 9%);
+            opacity: 1;
+            border-radius: 100%;
+            padding: 10px;
+        }
+
+        .btn {
+            font-size: 14px !important;
+            font-weight: 600 !important;
+        }
+    </style>
+    <script type="text/javascript">
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        var __current_block = JSON.parse(JSON.stringify({ "id": 6920, "name": "MONIEQEWQ", "name_full": "Nh\u00e0 tr\u1ecd MONIEQEWQ", "user_id": 8168, "category": 0, "category_name": "Nh\u00e0 tr\u1ecd", "category_name_short": "Nh\u00e0 tr\u1ecd", "room_type": "room", "room_type_name": "ph\u00f2ng", "type": "floor", "room_total": 20, "count_floor": 1, "area": 15, "room_amount": 1000, "ele_amount": 0, "water_amount": 0, "price_items_cache": [{ "id": 22810, "name": "Ti\u1ec1n \u0111i\u1ec7n", "type": "constant", "unit": "kwh", "price": 1700, "rooms": { "payload": [{ "id": 100355, "name": "Ph\u00f2ng 1", "sort": null, "value": 100355, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100356, "name": "Ph\u00f2ng 2", "sort": null, "value": 100356, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100357, "name": "Ph\u00f2ng 3", "sort": null, "value": 100357, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100358, "name": "Ph\u00f2ng 4", "sort": null, "value": 100358, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100359, "name": "Ph\u00f2ng 5", "sort": null, "value": 100359, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100360, "name": "Ph\u00f2ng 6", "sort": null, "value": 100360, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100361, "name": "Ph\u00f2ng 7", "sort": null, "value": 100361, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100362, "name": "Ph\u00f2ng 8", "sort": null, "value": 100362, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100363, "name": "Ph\u00f2ng 9", "sort": null, "value": 100363, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100364, "name": "Ph\u00f2ng 10", "sort": null, "value": 100364, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100365, "name": "Ph\u00f2ng 11", "sort": null, "value": 100365, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100366, "name": "Ph\u00f2ng 12", "sort": null, "value": 100366, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100367, "name": "Ph\u00f2ng 13", "sort": null, "value": 100367, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100368, "name": "Ph\u00f2ng 14", "sort": null, "value": 100368, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100369, "name": "Ph\u00f2ng 15", "sort": null, "value": 100369, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100370, "name": "Ph\u00f2ng 16", "sort": null, "value": 100370, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100371, "name": "Ph\u00f2ng 17", "sort": null, "value": 100371, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100372, "name": "Ph\u00f2ng 18", "sort": null, "value": 100372, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100373, "name": "Ph\u00f2ng 19", "sort": null, "value": 100373, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100374, "name": "Ph\u00f2ng 20", "sort": null, "value": 100374, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }] }, "value": null, "frames": [], "status": "is_active", "history": null, "user_id": 8168, "block_id": 6920, "category": "ele", "type_text": "Theo gi\u00e1 tr\u1ecb c\u1ed1 \u0111\u1ecbnh", "unit_text": "KWh", "is_default": 1, "status_text": "\u0110ang s\u1eed d\u1ee5ng", "subtraction": 1 }, { "id": 22811, "name": "Ti\u1ec1n n\u01b0\u1edbc", "type": "constant", "unit": "khoi", "price": 18000, "rooms": { "payload": [{ "id": 100355, "name": "Ph\u00f2ng 1", "sort": null, "value": 100355, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100356, "name": "Ph\u00f2ng 2", "sort": null, "value": 100356, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100357, "name": "Ph\u00f2ng 3", "sort": null, "value": 100357, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100358, "name": "Ph\u00f2ng 4", "sort": null, "value": 100358, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100359, "name": "Ph\u00f2ng 5", "sort": null, "value": 100359, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100360, "name": "Ph\u00f2ng 6", "sort": null, "value": 100360, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100361, "name": "Ph\u00f2ng 7", "sort": null, "value": 100361, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100362, "name": "Ph\u00f2ng 8", "sort": null, "value": 100362, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100363, "name": "Ph\u00f2ng 9", "sort": null, "value": 100363, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100364, "name": "Ph\u00f2ng 10", "sort": null, "value": 100364, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100365, "name": "Ph\u00f2ng 11", "sort": null, "value": 100365, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100366, "name": "Ph\u00f2ng 12", "sort": null, "value": 100366, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100367, "name": "Ph\u00f2ng 13", "sort": null, "value": 100367, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100368, "name": "Ph\u00f2ng 14", "sort": null, "value": 100368, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100369, "name": "Ph\u00f2ng 15", "sort": null, "value": 100369, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100370, "name": "Ph\u00f2ng 16", "sort": null, "value": 100370, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100371, "name": "Ph\u00f2ng 17", "sort": null, "value": 100371, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100372, "name": "Ph\u00f2ng 18", "sort": null, "value": 100372, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100373, "name": "Ph\u00f2ng 19", "sort": null, "value": 100373, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 100374, "name": "Ph\u00f2ng 20", "sort": null, "value": 100374, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }] }, "value": null, "frames": [], "status": "is_active", "history": null, "user_id": 8168, "block_id": 6920, "category": "water", "type_text": "Theo gi\u00e1 tr\u1ecb c\u1ed1 \u0111\u1ecbnh", "unit_text": "Kh\u1ed1i", "is_default": 1, "status_text": "\u0110ang s\u1eed d\u1ee5ng", "subtraction": 1 }, { "id": 22834, "name": "Ti\u1ec1n \u0111i\u1ec7n", "type": "constant", "unit": "kwh", "price": 1700, "rooms": { "payload": [{ "id": 100355, "name": "Ph\u00f2ng 1", "sort": null, "value": 100355, "status": "is_empty", "group_id": null, "priority": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }] }, "value": null, "frames": [], "status": "is_active", "history": null, "user_id": 8168, "block_id": 6920, "category": "other", "type_text": "Theo gi\u00e1 tr\u1ecb c\u1ed1 \u0111\u1ecbnh", "unit_text": "KWh", "is_default": 0, "status_text": "\u0110ang s\u1eed d\u1ee5ng", "subtraction": 0 }], "circle_order": 30, "deadline_bill": 30, "bill_setting": { "note": { "content": null }, "enable_qr": 1, "payment_default": "cash", "show_circle_day": 0, "single_send_zalo": 0, "template_bill_zalo": 1, "enable_rounding_money": 1, "extract_receipt_expense": 0 }, "app_renter_setting": { "allow_update_car": 1, "default_password": 123456789, "allow_close_clock": 0, "auto_create_account": 0, "allow_ticket_contract": 1, "allow_update_customer": 1 }, "room_group": [{ "id": 1, "name": "T\u1ea7ng tr\u1ec7t", "index": 0, "label": "T\u1ea7ng tr\u1ec7t", "value": 1 }], "max_member": 1, "open_door": null, "close_door": null, "rule": null, "extension": null, "data_log": { "id": 6920, "menu_label": { "pay_bill": 0, "room_list": "1\/20", "new_session": 19, "deposit_request": "0\/19", "terminate_contract": "0\/1" }, "block_report": { "id": 6911, "data": null, "block_id": 6920, "call_count": 0, "debt_count": 0, "post_count": 0, "view_count": 0, "empty_count": 19, "active_count": 1, "can_sale_count": 19, "debt_amount_total": 0, "deposit_temp_count": 0, "deposit_amount_total": 0, "male_dormitory_count": 0, "tick_terminate_count": 0, "will_terminate_count": 0, "deposit_contract_count": 0, "female_dormitory_count": 0, "renter_connected_count": 0, "deposit_temp_amount_total": 0, "debt_customer_amount_total": 0, "deposit_contract_amount_total": 0 } }, "setting": { "car_function": 1, "post_function": 1, "agent_function": 1, "asset_function": 1, "price_item_ele": 3, "price_item_wifi": 0, "price_item_trash": 0, "price_item_water": 3, "task_job_function": 1, "send_sms_when_create_bill": 1, "contract_document_function": 0 }, "province_id": 70, "district_id": 693, "ward_id": 25315, "address_component": { "address": "12313123 - \u0110\u01b0\u1eddng Phan \u0110\u00ecnh, Thanh H\u00f2a, B\u00f9 \u0110\u1ed1p, B\u00ecnh Ph\u01b0\u1edbc", "ward_id": "25315", "position": { "latitude": "10.7829132", "longitude": "106.6961898" }, "district_id": "693", "province_id": "70", "address_detail": "12313123 - \u0110\u01b0\u1eddng Phan \u0110\u00ecnh" }, "address": "12313123 - \u0110\u01b0\u1eddng Phan \u0110\u00ecnh, Thanh H\u00f2a, B\u00f9 \u0110\u1ed1p, B\u00ecnh Ph\u01b0\u1edbc", "latitude": 10.7829132, "longitude": 106.6961898, "auto_create_room": 1, "post_ids": [] }));
+
+        var __permission_block = JSON.parse(JSON.stringify(null));
+
+        let user = JSON.parse(JSON.stringify({ "staff": false, "free": false, "trial": true, "fee": false }));
+
+    </script>
+    <link href="bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="common.css" rel="stylesheet">
+    <link href="block.css?" rel="stylesheet">
+    <link href="quan-ly-tai-san.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app_loading" class="text-center" style="padding:40vh 10px">
+        <div class="inner-loading">
+            <img style="margin: auto" src="https://quanlytro.me/images/icons/loading.gif" alt="Đang tải..."
+                width="50px" />
+            <i class="loading_text" style="font-size: 13px; margin-top: -10px;">Đang tải dữ liệu...</i>
+        </div>
+    </div>
+    <header>
+        <div class="header-inner">
+            <!-- <div class="notification text-center" style="padding: 10px; background-color: #ffe8c8;">
+                LOZIDO đã có thêm tính năng <strong>gửi hóa đơn tự động cho khách qua ZALO và APP dành riêng khách
+                    thuê</strong>. Liên hệ chuyên viên để thêm thông tin qua: <b style="color: #0085ef">HOTLINE:
+                    0965.227.453</b> hoặc chat <a href="https://zalo.me/0965227453" target="_bank"
+                    style="color: #0085ef"><b>ZALO</b></a>
+            </div> -->
+            <div class="header-sticky">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#lozido-main-menu" aria-controls="lozido-main-menu" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"> </span>
+                        </button>
+                        <nav class="collapse navbar-collapse lozido-main-menu">
+                            <ul class="navbar-nav main-menu-left  me-auto mb-2 mb-lg-0">
+                                <!-- <li class="nav-item menu-item active">
+                                    <a href="/" class="nav-link ">
+                                        <i data-feather="arrow-left"></i>
+                                        <img width="180px"
+                                            src="https://quanlytro.me/images/logo-lozido-quan-ly-tro-white.png" />
+                                    </a>
+                                </li> -->
+                            </ul>
+
+                            <ul class="topbar-items main-menu-right navbar-nav">
+                                <li class="nav-item menu-item active">
+                                    <a href=index.html class="nav-link ">
+                                        <i data-feather="home"></i>
+                                        <span style="margin-top: 5px" class="text">Quản lý nhà</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item menu-item ">
+                                    <a href="./tong-bao-cao.html" class="nav-link ">
+                                        <i data-feather="pie-chart"></i>
+                                        <span style="margin-top: 5px" class="text">Tổng báo cáo</span>
+                                    </a>
+                                    <!--Đăng tin-->
+                                    <!-- </li>
+                                                                                                                                                                    <li class="nav-item menu-item ">
+                                            <a href="/dang-tin" class="nav-link ">
+                                                <i data-feather="plus"></i>
+                                                <span style="margin-top: 5px" class="text">Đăng tin</span>
+                                            </a>
+                                        </li> -->
+                                    <!--Môi giới-->
+                                    <!-- <li class="nav-item menu-item ">
+                                            <a href="/mo-gioi" class="nav-link ">
+                                                <i data-feather="users"></i>
+                                                <span style="margin-top: 5px" class="text">Môi giới</span>
+                                            </a>
+                                        </li> -->
+
+                                    <!-- <li class="nav-item menu-item ">
+                                            <a href="/phan-quyen" class="nav-link ">
+                                                <i data-feather="box"></i>
+                                                <span style="margin-top: 5px" class="text">Công ty/nhóm</span>
+                                            </a>
+                                        </li> -->
+                                <li class="nav-item menu-item ">
+                                    <a href="/cai-dat" class="nav-link ">
+                                        <i data-feather="settings"></i>
+                                        <span style="margin-top: 5px" class="text">Cài đặt chung</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item btn-group menu-item ">
+                                    <a href="javascript:;" class="nav-link" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span class="count-notification badge">0</span>
+                                        <i data-feather="bell"></i>
+                                        <span style="margin-top: 5px" class="text">Thông báo</span>
+                                    </a>
+                                    <ul class="dropdown-menu notication-dropdown dropdown-menu-lg-end">
+                                        <div class="text-center" style="padding: 20px">
+                                            <img style="margin: auto" src="loading.jpg" alt="Đang tải..."
+                                                width="50px" />
+                                            <div>
+                                                <i class="loading_text" style="font-size: 13px; margin-top: -10px;">Đang
+                                                    tải
+                                                    thông báo...</i>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item menu-item ">
+                                    <a href="/tai-khoan" class="nav-link ">
+                                        <i data-feather="user"></i>
+                                        <span style="margin-top: 5px" class="text">Tài khoản</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item menu-item ">
+                                    <a href="/dang-xuat" class="nav-link ">
+                                        <i data-feather="log-out"></i>
+                                        <span style="margin-top: 5px" class="text">Đăng xuất</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div>
+        <div>
+            <style type="text/css">
+                .scrollable-content {
+                    overflow-x: auto;
+                    white-space: nowrap;
+                    flex: 1;
+                    position: relative;
+                    scroll-behavior: smooth;
+                    /* Thêm hiệu ứng cuộn mượt */
+                }
+
+                .scrollable-content-container button {
+                    color: #fff;
+                    border: none;
+                    cursor: pointer;
+                    transition: opacity 0.3s ease;
+                    position: absolute;
+                    top: 50%;
+                    height: 96%;
+                    width: 50px;
+                    transform: translateY(-50%);
+                    z-index: 1;
+                }
+
+                .scrollable-content-container button::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 10px;
+                    transform: translateY(-50%);
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 100%;
+                    background: #000;
+                    z-index: -1;
+                }
+
+                .scrollable-content-container button:hover::before {
+                    background-color: #2f8932;
+                }
+
+                .scrollable-content-container button.hidden {
+                    opacity: 0;
+                    pointer-events: none;
+                    /* Ngăn chặn sự kiện chuột khi ẩn */
+                }
+
+                .scrollable-content-container .scroll-left {
+                    left: 0px;
+                    flex: 0 0 auto;
+                    background: linear-gradient(to right, rgb(255 255 255), rgb(255 255 255 / 0%));
+                }
+
+                .scrollable-content-container .scroll-right {
+                    right: 0px;
+                    flex: 0 0 auto;
+                    background: linear-gradient(to left, rgb(255 255 255), rgb(255 255 255 / 0%));
+                }
+            </style>
+
+            <div style="min-height: 125px;display: flex;padding: 0px 10px 0px 0px;">
+                <div class="col-md-2 d-flex align-items-center justify-content-center" style="margin-right: 10px;">
+                    <div class="current-block d-flex align-items-center" style="position: relative"
+                        data-bs-toggle="modal" data-bs-target="#manageBlock">
+                        <div class="d-flex align-items-center" style="flex-direction: row; flex:1">
+                            <div class="icon-blocks">
+                                <span class="count-block">1</span>
+                                <i data-feather="home" class="feather-size-18"> </i>
+                            </div>
+
+                            <div style="padding: 20px 0px 20px 5px; flex:1">
+                                <span style="font-size: 12px;">Đang quản lý</span>
+                                <h4
+                                    style="font-size: 14px; color: #15a05c; padding:0px; margin:0px; white-space: nowrap;max-width: 150px; overflow: hidden; text-overflow: ellipsis; ">
+                                    <span>Nhà trọ IT MOTEL</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <button class="shadow" id="add-block" style="position: absolute;
+                        right: -14px;
+                        top: 29px;
+                        border-radius: 100%;
+                        height: 35px;
+                        width: 35px;
+                        text-align: center;
+                        padding: 0px;
+                        background-color: #1175c6;
+                        color: #fff;
+                        border: 1px solid #1175c6;
+                        z-index: 10;" data-bs-toggle="modal" data-bs-target="#addBlock">
+                            <span data-bs-toggle="tooltip" data-bs-placement="top" title="Thêm mới nhà cho thuê">
+                                <i data-feather="plus"> </i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-10" style="align-items: center; justify-content: space-between; display: flex;">
+                    <div class=" scrollable-content-container"
+                        style="position: relative; align-items: center; justify-content: space-between; display: flex;overflow: hidden;">
+                        <button class="scroll-left">←</button>
+                        <div style="display: flex; flex-wrap: nowrap; overflow-x: auto; position: relative;"
+                            class="scrollable-content">
+                            <a href="index.html" class="item-menu">
+                                <div class="icon text-center">
+                                    <img width=55px src="QL_Phong.png" />
+                                </div>
+                                <div class="key">
+                                    <span class="title"><b>Quản lý phòng</b></span>
+                                </div>
+                            </a>
+                            <a href="./lap-phieu-thu.html" class="item-menu">
+                                <div class="icon text-center">
+                                    <img width=55px src="QL_HD.png" />
+                                </div>
+                                <div class="key">
+                                    <span class="title"><b>Quản lý hóa đơn</b></span>
+                                </div>
+                            </a>
+                            <a href="./quan-ly-dich-vu.html" class="item-menu">
+                                <div class="icon text-center">
+                                    <img width=55px src="QL_DV.webp" />
+                                </div>
+                                <div class="key">
+                                    <span class="title"><b>Quản lý dịch vụ</b></span>
+                                </div>
+                            </a>
+                            <a href="./quan-ly-tai-san.html" class="item-menu active">
+                                <div class="icon text-center">
+                                    <img width=55px src="QL_TS.webp" />
+                                </div>
+                                <div class="key">
+                                    <span class="title"><b>Quản lý tài sản</b></span>
+                                </div>
+                            </a>
+                            <a href="quan-ly-hop-dong.html" class="item-menu">
+                                <div class="icon text-center">
+                                    <img width=55px src="QL_HD.webp" />
+                                </div>
+                                <div class="key">
+                                    <span class="title"><b>Quản lý hợp đồng</b></span>
+                                </div>
+                            </a>
+                            <a href="quan-ly-khach-thue.html" class="item-menu">
+                                <div class="icon text-center">
+                                    <img width=55px src="QL_KT.webp" />
+                                </div>
+                                <div class="key">
+                                    <span class="title"><b>Quản lý khách thuê</b></span>
+                                </div>
+                            </a>
+                            <a href="./quan-ly-thu-chi.html" class="item-menu">
+                                <div class="icon text-center">
+                                    <img width=55px src="QL_TC.webp" />
+                                </div>
+                                <div class="key">
+                                    <span class="title"><b>Thu/Chi - Tổng kết</b></span>
+                                </div>
+                            </a>
+                            <a href="./cai-dat.html" class="item-menu">
+                                <div class="icon text-center">
+                                    <img width=55px src="CD.webp" />
+                                </div>
+                                <div class="key">
+                                    <span class="title"><b>Cài đặt</b></span>
+                                </div>
+                            </a>
+                            <a href="./lich-su-gui-zalo.html" class="item-menu">
+                                <div class="icon text-center">
+                                    <img width=45px src="Zalo.webp" />
+                                </div>
+                                <div class="key">
+                                    <span class="title"><b>Lịch sử gửi zalo</b></span>
+                                </div>
+                            </a>
+                        </div>
+                        <button class="scroll-right">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--tự code-->
+            <div class="main-container">
+                <div class="main-header">
+                    <div class="title-header">
+                        <h3>Tất cả tài sản</h3>
+                        <p>Danh sách tài sản đang có</p>
+                    </div>
+                    <!-- <div class = "button-header"> -->
+                    <button>
+                        <i data-feather="plus"></i>
+                    </button>
+                    <!-- </div> -->
+                </div>
+                <div id="tenant-asset-table"></div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            const $scrollableContent = $('.scrollable-content');
+            const $scrollLeft = $('.scroll-left');
+            const $scrollRight = $('.scroll-right');
+
+            function updateButtonVisibility() {
+                const scrollLeft = $scrollableContent.scrollLeft();
+                const scrollWidth = $scrollableContent[0].scrollWidth - 10;
+                const clientWidth = $scrollableContent[0].clientWidth;
+
+                $scrollLeft.toggleClass('hidden', scrollLeft === 0);
+                $scrollRight.toggleClass('hidden', scrollLeft + clientWidth >= scrollWidth);
+            }
+
+            $scrollLeft.click(function () {
+                $scrollableContent.animate({ scrollLeft: 0 }, 100); // Hiệu ứng cuộn mượt
+            });
+
+            $scrollRight.click(function () {
+                const scrollWidth = $scrollableContent[0].scrollWidth - 10;
+                $scrollableContent.animate({ scrollLeft: scrollWidth }, 100); // Hiệu ứng cuộn mượt
+            });
+
+            $scrollableContent.on('scroll', updateButtonVisibility);
+
+            updateButtonVisibility(); // Cập nhật trạng thái nút khi trang được tải
+        </script>
+        <script>
+            feather.replace();
+        </script>
+        <!-- <script src="https://unpkg.com/tabulator-tables@5.2.7/dist/js/tabulator.min.js"></script> -->
+        <script src="quan-ly-tai-san.js"></script>
+</body>
+
+</html>

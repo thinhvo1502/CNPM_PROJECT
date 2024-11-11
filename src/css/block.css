@@ -1,0 +1,320 @@
+.current-block {
+  flex-direction: row;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 100%;
+  padding: 8px 10px;
+  margin-left: 10px;
+  justify-content: space-between;
+  border: solid 5px #baddd7;
+  cursor: pointer;
+}
+.icon-blocks {
+  background-color: #1155cc;
+  color: #fff;
+  border-radius: 100%;
+  position: relative;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.count-block {
+  position: absolute;
+  top: -15px;
+  right: -7px;
+  background-color: #f44336;
+  border: 1px solid #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 12px;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-table .form-check-inline {
+  display: flex;
+  margin-right: 0.5rem;
+  align-items: center;
+  border-radius: 5px;
+  border: 0.5px solid #ccc;
+  padding: 3px 7px 3px 1.9em;
+  text-overflow: ellipsis;
+  word-break: break-word !important;
+  white-space: nowrap !important;
+  background-color: #fff;
+  font-size: 13px;
+  position: relative;
+}
+
+.header-table .form-check-inline .form-check-input {
+  margin-right: 5px;
+  margin-top: 0 !important;
+}
+
+.header-table .form-check-inline:has(> .form-check-input:checked) {
+  border: 0.5px solid #0d6efd;
+}
+
+span.count-filter {
+  position: absolute;
+  right: -5px;
+  top: -10px;
+  background-color: #000;
+  border-radius: 5px;
+  color: #fff;
+  padding: 2px 5px;
+  font-size: 11px;
+  line-height: 100%;
+}
+
+span.count-filter.success {
+  background-color: #3c9d46;
+}
+span.count-filter.error {
+  background-color: #dc3545;
+}
+span.count-filter.warning {
+  background-color: #fe8f00;
+}
+span.count-filter.disable {
+  background-color: #5f6368;
+}
+
+#buttom-save-container {
+  z-index: 1;
+  text-align: center;
+  background-color: #dfecf5;
+  padding: 5px 15px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  width: 100%;
+  transition: all 0.5s;
+  display: none;
+  position: fixed;
+  left: 0;
+  bottom: -60px;
+  opacity: 1;
+}
+
+#buttom-save-container.stop {
+  bottom: -60px;
+  opacity: 0;
+  display: none;
+}
+
+#buttom-save-container.show {
+  bottom: 0;
+  display: inherit;
+}
+
+#count-edit {
+  font-weight: normal;
+  font-size: 13px;
+  color: #ffffff;
+  background-color: #15a05c;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  border-radius: 100%;
+  text-align: center;
+  align-self: center;
+  line-height: 25px;
+  margin: auto;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+}
+
+#buttom-save-container .btn {
+  margin-top: 10px;
+}
+
+.item-report {
+  background-color: #4caf5017;
+  border-radius: 10px;
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;*/
+}
+
+.item-report .value {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.item-report .value svg.feather {
+  border: 2px solid #15a05c;
+  border-radius: 50px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.item-report .key {
+  text-align: end;
+}
+
+.item-report .number {
+  font-size: 24px;
+}
+
+.item-report .title-container {
+  display: inline-grid;
+  text-align: end;
+}
+
+.item-menu {
+  border: 0.5px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 5px;
+  height: 96.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #fff;
+  margin: 3px;
+  margin-right: 5px !important;
+  width: 140px;
+  text-align: center;
+  flex: 1 0 auto;
+}
+
+a.item-menu.active,
+a.item-menu:hover {
+  border: 3px solid #13c4eb;
+  border-bottom: 3px solid #17b5ca;
+  color: #1d6922;
+  text-decoration: underline;
+  box-shadow: 0 0 0 0.27rem rgb(37 160 92 / 22%);
+}
+
+.item-menu .key {
+  font-size: 13px;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price-items-checkout-layout .item {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.price-items-checkout-layout .item .item-check-name {
+  width: 60%;
+}
+.price-items-checkout-layout .item .item-value {
+  width: 40%;
+}
+
+.price-items-checkout-layout label.input-group-text {
+  min-width: 70px;
+  font-size: 13px;
+}
+
+.task-item.d-flex {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  margin-top: 10px;
+}
+
+.task-item .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.task-item .icon.doing {
+  background-color: #f44336;
+}
+
+.task-item .icon.done {
+  background-color: #4caf50;
+}
+
+.task-item .data {
+  border: 1px solid #eee;
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+.task-item .data .item {
+  padding: 10px 0;
+}
+.task-item .data .item:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.room-list .room-item .room-item-inner {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+  height: 100%;
+}
+
+.room-list .room-item.active .room-item-inner {
+  border: 1px solid #7dc242;
+}
+
+.room-list .room-item .icon-room {
+  background-color: #d7d7d7;
+  border-radius: 100%;
+  text-align: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.room-list .room-item.active .icon-room {
+  background-color: #7dc242;
+}
+
+.asset-checkout-layout .item {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.asset-checkout-layout .item .item-check-name {
+  width: 60%;
+}
+.asset-checkout-layout .item .item-value {
+  width: 40%;
+}
+
+.asset-checkout-layout label.input-group-text {
+  min-width: 70px;
+  font-size: 13px;
+}

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="vi" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="geo.region" content="vi">
+    <meta name="language" content="vi">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>IT MOTEL - Quản lý phòng trọ</title>
+    <meta name="keywords"
+        content="Phần mềm nhà trọ, phần mềm phòng trọ, phần mềm quản lý nhà trọ, phần mềm quản lý nhà trọ, quản lý nhà trọ, quản lý trọ, quản lý phòng trọ">
+    <meta name="description"
+        content="Phần mềm quản lý nhà  trọ trên điện thoại, máy tính, máy tính bảng, iPad hỗ trợ chủ nhà quản lý nhà trọ, phòng trọ, ký túc xá  dễ dàng và tiện lợi mọi lúc mọi nơi, tiết kiệm thời gian và công sức">
+
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="csrf-token" content="bk10DWcJwXC3QxRwzbHMMKJC6b4cPlEzMPXAQK73">
+
+    <!-- <meta name="author" content="LOZIDO - Quản lý nhà cho thuê">
+    <meta name="copyright" content="LOZIDO - Quản lý nhà cho thuê - Platform Quan ly nha tro, phong tro"> -->
+    <meta name="abstract" content="Phần mềm quản lý nhà trọ, phòng trọ, ký túc xá, chung cư tốt nhất hiện nay">
+
+
+
+    <!-- <script src="jquery.min.js"></script>
+    <script src="jquery-ui-1.8.13.min.js"></script> -->
+    <script src="../js/feather.min.js"></script>
+    <!-- <script src="sweetalert2@11"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script> -->
+    <link href="https://unpkg.com/tabulator-tables@6.3.0/dist/css/tabulator.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@6.3.0/dist/js/tabulator.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- cài đặt token CSRF cho các yêu cầu AJAX-->
+    <!-- <script type="text/javascript">
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        var __current_block = JSON.parse(JSON.stringify({ "id": 6863, "name": "HH", "name_full": "Nh\u00e0 tr\u1ecd HH", "user_id": 8100, "category": 0, "category_name": "Nh\u00e0 tr\u1ecd", "category_name_short": "Nh\u00e0 tr\u1ecd", "room_type": "room", "room_type_name": "ph\u00f2ng", "type": "floor", "room_total": 5, "count_floor": 1, "area": 15, "room_amount": 1300000, "ele_amount": 0, "water_amount": 0, "price_items_cache": [{ "id": 22609, "name": "Ti\u1ec1n \u0111i\u1ec7n", "type": "constant", "unit": "kwh", "price": 1700, "rooms": [{ "id": 99491, "name": "Ph\u00f2ng 1", "sort": null, "value": 99491, "status": "is_empty", "group_id": null, "priority": null, "circle_day": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 99492, "name": "Ph\u00f2ng 2", "sort": null, "value": 99492, "status": "is_empty", "group_id": null, "priority": null, "circle_day": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 99493, "name": "Ph\u00f2ng 3", "sort": null, "value": 99493, "status": "is_empty", "group_id": null, "priority": null, "circle_day": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 99494, "name": "Ph\u00f2ng 4", "sort": null, "value": 99494, "status": "is_empty", "group_id": null, "priority": null, "circle_day": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 99495, "name": "Ph\u00f2ng 5", "sort": null, "value": 99495, "status": "is_empty", "group_id": null, "priority": null, "circle_day": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }], "value": null, "frames": [], "status": "is_active", "history": null, "user_id": 8100, "block_id": 6863, "category": "ele", "type_text": "Theo gi\u00e1 tr\u1ecb c\u1ed1 \u0111\u1ecbnh", "unit_text": "KWh", "is_default": 1, "status_text": "\u0110ang s\u1eed d\u1ee5ng", "subtraction": 1 }, { "id": 22610, "name": "Ti\u1ec1n n\u01b0\u1edbc", "type": "constant", "unit": "khoi", "price": 18000, "rooms": [{ "id": 99491, "name": "Ph\u00f2ng 1", "sort": null, "value": 99491, "status": "is_empty", "group_id": null, "priority": null, "circle_day": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 99492, "name": "Ph\u00f2ng 2", "sort": null, "value": 99492, "status": "is_empty", "group_id": null, "priority": null, "circle_day": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 99493, "name": "Ph\u00f2ng 3", "sort": null, "value": 99493, "status": "is_empty", "group_id": null, "priority": null, "circle_day": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 99494, "name": "Ph\u00f2ng 4", "sort": null, "value": 99494, "status": "is_empty", "group_id": null, "priority": null, "circle_day": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }, { "id": 99495, "name": "Ph\u00f2ng 5", "sort": null, "value": 99495, "status": "is_empty", "group_id": null, "priority": null, "circle_day": null, "room_amount": null, "status_text": "\u0110ang tr\u1ed1ng", "circle_month": null, "active_status": "pending_create_bill", "priority_text": "Kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "customer_count": null, "active_status_text": "Ch\u1edd k\u1ef3 thu t\u1edbi" }], "value": null, "frames": [], "status": "is_active", "history": null, "user_id": 8100, "block_id": 6863, "category": "water", "type_text": "Theo gi\u00e1 tr\u1ecb c\u1ed1 \u0111\u1ecbnh", "unit_text": "Kh\u1ed1i", "is_default": 1, "status_text": "\u0110ang s\u1eed d\u1ee5ng", "subtraction": 1 }], "circle_order": 1, "deadline_bill": 30, "bill_setting": { "note": { "content": null }, "enable_qr": 1, "payment_default": "cash", "show_circle_day": 0, "single_send_zalo": 0, "template_bill_zalo": 1, "enable_rounding_money": 1, "extract_receipt_expense": 0 }, "app_renter_setting": { "allow_update_car": 1, "default_password": 123456789, "allow_close_clock": 0, "auto_create_account": 0, "allow_ticket_contract": 1, "allow_update_customer": 1 }, "room_group": [{ "id": 1, "name": "T\u1ea7ng tr\u1ec7t", "index": 0, "label": "T\u1ea7ng tr\u1ec7t", "value": 1 }], "max_member": 1, "open_door": null, "close_door": null, "rule": null, "extension": null, "data_log": { "menu_label": { "pay_bill": 0, "room_list": "0\/5", "new_session": 5, "deposit_request": 5, "terminate_contract": 0 } }, "setting": { "car_function": 1, "post_function": 1, "agent_function": 1, "asset_function": 1, "price_item_ele": 3, "price_item_wifi": 0, "price_item_trash": 0, "price_item_water": 3, "task_job_function": 1, "send_sms_when_create_bill": 1, "contract_document_function": 0 }, "province_id": 79, "district_id": 762, "ward_id": 27097, "address_component": { "address": "123 nguy\u1ec5n duy trinh, B\u00ecnh Tr\u01b0ng \u0110\u00f4ng, Th\u00e0nh Ph\u1ed1 Th\u1ee7 \u0110\u1ee9c, Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u00ed Minh", "ward_id": "27097", "position": { "latitude": "10.7829132", "longitude": "106.6961898" }, "district_id": "762", "province_id": "79", "address_detail": "123 nguy\u1ec5n duy trinh" }, "address": "123 nguy\u1ec5n duy trinh, B\u00ecnh Tr\u01b0ng \u0110\u00f4ng, Th\u00e0nh Ph\u1ed1 Th\u1ee7 \u0110\u1ee9c, Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u00ed Minh", "latitude": 10.7829132, "longitude": 106.6961898, "auto_create_room": 1, "post_ids": [] }));
+
+        var __permission_block = JSON.parse(JSON.stringify(null));
+
+        let user = JSON.parse(JSON.stringify({ "staff": false, "free": false, "trial": true, "fee": false }));
+
+    </script> -->
+    <!--chứa thông tin người dùng hiện tại-->
+    <!--liên kết với các tệp css-->
+    <!--href: đường dẫn tới tệp CSS; rel: xác định mối quan hệ giữa tài liệu hiện tại và tệp lk-->
+    <!--crossorigin: chỉ định chính xác chia sẻ tài nguyên giữa các nguồn gốc-->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/block.css" rel="stylesheet">
+    <link href="../css/room-management.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--loading-->
+
+    <!--Header-->
+
+    <header>
+        <div class="header-sticky">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#lozido-main-menu" aria-controls="lozido-main-menu" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"> </span>
+                    </button>
+                    <nav class="collapse navbar-collapse lozido-main-menu">
+                        <ul class="navbar-nav main-menu-left  me-auto mb-2 mb-lg-0">
+                        </ul>
+
+                        <ul class="topbar-items main-menu-right navbar-nav">
+                            <li class="nav-item menu-item active">
+                                <a href=index.html class="nav-link ">
+                                    <i data-feather="home"></i>
+                                    <span style="margin-top: 5px" class="text">Quản lý nhà</span>
+                                </a>
+                            </li>
+                            <li class="nav-item menu-item ">
+                                <a href="./tong-bao-cao.html" class="nav-link ">
+                                    <i data-feather="pie-chart"></i>
+                                    <span style="margin-top: 5px" class="text">Tổng báo cáo</span>
+                                </a>
+
+                            </li>
+
+                            <li class="nav-item menu-item ">
+                                <a href="./cai-dat-chung.html" class="nav-link ">
+                                    <i data-feather="settings"></i>
+                                    <span style="margin-top: 5px" class="text">Cài đặt chung</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item btn-group menu-item ">
+                                <a href="javascript:;" class="nav-link" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="count-notification badge">0</span>
+                                    <i data-feather="bell"></i>
+                                    <span style="margin-top: 5px" class="text">Thông báo</span>
+                                </a>
+                                <ul class="dropdown-menu notication-dropdown dropdown-menu-lg-end">
+                                    <div class="text-center" style="padding: 20px">
+                                        <img style="margin: auto" src="loading.jpg" alt="Đang tải..." width="50px" />
+                                        <div>
+                                            <i class="loading_text" style="font-size: 13px; margin-top: -10px;">Đang tải
+                                                thông báo...</i>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item menu-item ">
+                                <a href="./tai-khoan.html" class="nav-link ">
+                                    <i data-feather="user"></i>
+                                    <span style="margin-top: 5px" class="text">Tài khoản</span>
+                                </a>
+                            </li>
+                            <li class="nav-item menu-item ">
+                                <a href="/dang-xuat" class="nav-link ">
+                                    <i data-feather="log-out"></i>
+                                    <span style="margin-top: 5px" class="text">Đăng xuất</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <!--endHeader-->
+
+    <div class="scrollable">
+        <!--thanh ba-->
+        <div style="min-height: 125px;display: flex;padding: 0px 10px 0px 0px;">
+            <!--Thanh ba chính-->
+            <div class="col-md-10" style="align-items: center; justify-content: space-between; display: flex;">
+                <div class=" scrollable-content-container"
+                    style="position: relative; align-items: center; justify-content: space-between; display: flex;overflow: hidden;">
+                    <!-- <div style="display: flex; flex-wrap: nowrap; overflow-x: auto; position: relative;"
+                        class="scrollable-content"> -->
+                    <a href="index.html" class="item-menu active">
+                        <div class="icon text-center">
+                            <img width=55px src = "../assets/images/QL_Phong.png" />
+                        </div>
+                        <div class="key">
+                            <span class="title"><b>Quản lý phòng</b></span>
+                        </div>
+                    </a>
+                    <a href="./lap-phieu-thu.html" class="item-menu">
+                        <div class="icon text-center">
+                            <img width=55px src="../assets/images/QL_HD.webp" />
+                        </div>
+                        <div class="key">
+                            <span class="title"><b>Quản lý hóa đơn</b></span>
+                        </div>
+                    </a>
+                    <a href="./quan-ly-dich-vu.html" class="item-menu">
+                        <div class="icon text-center">
+                            <img width=55px src="../assets/images/QL_DV.webp" />
+                        </div>
+                        <div class="key">
+                            <span class="title"><b>Quản lý dịch vụ</b></span>
+                        </div>
+                    </a>
+                    <!-- <a href="./quan-ly-tai-san.html" class="item-menu">
+                            <div class="icon text-center">
+                                <img width=55px src="QL_TS.webp" />
+                            </div>
+                            <div class="key">
+                                <span class="title"><b>Quản lý tài sản</b></span>
+                            </div>
+                        </a> -->
+                    <a href="./quan-ly-hop-dong.html" class="item-menu">
+                        <div class="icon text-center">
+                            <img width=55px src="../assets/images/QL_HD.webp" />
+                        </div>
+                        <div class="key">
+                            <span class="title"><b>Quản lý hợp đồng</b></span>
+                        </div>
+                    </a>
+                    <a href="./quan-ly-khach-thue.html" class="item-menu">
+                        <div class="icon text-center">
+                            <img width=55px src="../assets/images/QL_KT.webp" />
+                        </div>
+                        <div class="key">
+                            <span class="title"><b>Quản lý khách thuê</b></span>
+                        </div>
+                    </a>
+                    <a href="./quan-ly-thu-chi.html" class="item-menu">
+                        <div class="icon text-center">
+                            <img width=55px src="../assets/images/QL_TC.webp" />
+                        </div>
+                        <div class="key">
+                            <span class="title"><b>Thu/Chi - Tổng kết</b></span>
+                        </div>
+                    </a>
+                    <a href="./cai-dat.html" class="item-menu">
+                        <div class="icon text-center">
+                            <img width=55px src="../assets/images/CD.webp" />
+                        </div>
+                        <div class="key">
+                            <span class="title"><b>Cài đặt</b></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="info-items">
+                <div class="info-item">
+                    <div class="icon-bottom"><img src="https://img.icons8.com/?size=100&id=2Sa1k4ZpFptq&format=png"
+                            alt="icon1"></div>
+                    <div class="text">
+                        <p>Tổng số tiền khách nợ</p>
+                        <p class="amount">1.000đ</p>
+                    </div>
+                    <div class="arrow">&rarr;</div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon-bottom"><img src="https://img.icons8.com/?size=100&id=lxOi5Rk3GnMh&format=png"
+                            alt="icon2"></div>
+                    <div class="text">
+                        <p>Tổng số tiền cọc</p>
+                        <p class="amount">0đ</p>
+                    </div>
+                    <div class="arrow">&rarr;</div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon-bottom"><img src="https://img.icons8.com/?size=100&id=VLkxUf20RHGE&format=png"
+                            alt="icon3"></div>
+                    <div class="text">
+                        <p>Tổng số tiền cọc giữ chỗ phòng</p>
+                        <p class="amount">0đ</p>
+                    </div>
+                    <div class="arrow">&rarr;</div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon-bottom"><img src="https://img.icons8.com/?size=48&id=yjYAciFYtvzW&format=png"
+                            alt="icon4"></div>
+                    <div class="text">
+                        <p>Sự cố phòng</p>
+                        <p class="amount">0 Vấn đề</p>
+                    </div>
+                    <div class="arrow">&rarr;</div>
+                </div>
+            </div>
+
+            <!--thanh nút và form thêm-->
+            <div class="button-bar">
+                <button id="openFormBtn" class="add-round">
+                    <span data-bs-toggle="tooltip" data-bs-placement="left" title="Thêm phòng">
+                        <i data-feather="plus"> </i>
+                    </span>
+                </button>
+                <!-- Lớp phủ mờ -->
+                <div id="overlay" class="overlay" onclick="closeForm()"></div>
+                <div id="addRoomForm" class="form-popup">
+                    <form class="form-container">
+                        <span class="close-btn" onclick="closeForm()">&times;</span>
+                        <h3>Thêm phòng</h3>
+
+                        <!--Thông tin phòng-->
+                        <label for="roomName">Tên phòng</label>
+                        <input type="text" id="roomName" required>
+
+                        <label for="floor">Tầng/dãy </label>
+                        <select id="floor" required>
+                            <option value="Tầng trệt">Tầng trệt</option>
+                            <option value="Tầng một">Tầng một</option>
+                        </select>
+
+                        <label for="area">Diện tích</label>
+                        <input type="number" id="area" required>
+
+                        <label for="rentPrice">Gía thuê (đ)</label>
+                        <input type="number" id="rentPrice" required>
+
+                        <label for="roomType">Loại phòng</label>
+                        <select id="roomType">
+                            <option value="Phòng đơn">Phòng đơn</option>
+                            <option value="Phòng đôi">Phòng đôi</option>
+                            <option value="Phòng gia đình">Phòng gia đình</option>
+                        </select>
+
+                        <label for="desc">Mô tả</label>
+                        <input type="text" id="des">
+
+                        <button type="button" onclick="addRoom()">Thêm phòng</button>
+                    </form>
+                </div>
+                <!--nút lọc-->
+                <div class="d-flex" style="margin-left: 40px;">
+                    <div class="dropdown">
+                        <button style="height: 100%" class="btn btn-primary dropdown-toggle" type="button"
+                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i data-feather="file-text"> </i>
+                            Ẩn/Hiện cột
+                            <span id="count_exclude_column"
+                                style="position: absolute;top: -12px;right: -10px;background-color: #dc3545;font-size: 12px;width: 20px;height: 20px;display: flex;align-items: center;justify-content: center;border-radius: 5px;color: #fff;">0</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="list-show-column">
+                            <li>
+                                <label class="dropdown-item">
+                                    <input type="checkbox" checked class="form-check-input" name="group_id"
+                                        value="group_id"> Tầng/ dãy
+                                </label>
+                            </li>
+                            <li>
+                                <label class="dropdown-item">
+                                    <input type="checkbox" checked class="form-check-input"
+                                        name="deposit_contract_amount" value="deposit_contract_amount"> Tiền cọc
+                                </label>
+                            </li>
+                            <li>
+                                <label class="dropdown-item">
+                                    <input type="checkbox" checked class="form-check-input" name="debt_amount"
+                                        value="debt_amount"> Tiền nợ
+                                </label>
+                            </li>
+                            <li>
+                                <label class="dropdown-item">
+                                    <input type="checkbox" checked class="form-check-input" name="customers"
+                                        value="customers"> Số người ở
+                                </label>
+                            </li>
+                            <li>
+                                <label class="dropdown-item">
+                                    <input type="checkbox" checked class="form-check-input" name="circle_day"
+                                        value="circle_day"> Ngày thuê
+                                </label>
+                            </li>
+                            <li>
+                                <label class="dropdown-item">
+                                    <input type="checkbox" checked class="form-check-input" name="circle_month"
+                                        value="circle_month"> Chu kỳ thu tiền
+                                </label>
+                            </li>
+                            <li>
+                                <label class="dropdown-item">
+                                    <input type="checkbox" checked class="form-check-input" name="date_join"
+                                        value="date_join"> Ngày vào ở
+                                </label>
+                            </li>
+                            <li>
+                                <label class="dropdown-item">
+                                    <input type="checkbox" checked class="form-check-input" name="date_terminate"
+                                        value="date_terminate"> Thời hạn hợp đồng
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="room-table"></div>
+        </div>
+    </div>
+    <script>feather.replace();</script>
+    <script src="../js/roomManagement.js"></script>
+</body>
+
+</html>

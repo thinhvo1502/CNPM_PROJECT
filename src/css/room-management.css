@@ -1,0 +1,117 @@
+
+.main-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  padding-bottom: 100px;
+  font-size: 16px;
+}
+  .info-items {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 20px;
+    /* padding: 20px; */
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 24.5%
+  }
+  
+  .icon-bottom img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+  }
+  .button-bar {
+    padding: 15px;
+    align-self: flex-end;
+    display: flex
+  }
+  /*flex-grow: cho phép phần tử con mở rộng để chiếm không gian tr*/
+  .text {
+    margin-left: 10px;
+    flex-grow: 1;  
+  }
+  
+  .text p {
+    margin: 0;
+  }
+  
+  .amount {
+    font-weight: bold;
+    color: red;
+  }
+  
+  .arrow {
+    font-size: 30px;
+    color: #ccc;
+  }
+
+#room-table {
+  width: 100%;
+  background-color: aquamarine;
+  margin: 20px;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Màu nền đen mờ */
+  z-index: 5; /* Đảm bảo nằm dưới form dialog */
+}
+.form-popup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #888;
+  background-color: #fefefe;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 9;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.form-container input, select {
+  margin: 5px 0;
+  padding: 8px;
+  width: 100%;
+}
+
+.form-container button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+}
+.form-container button:hover {
+  opacity: 0.8;
+}
+.form-container .close-btn {
+  position: absolute;
+    right: 15px;
+    top: 5px;
+    cursor: pointer;
+    font-size: 35px;
+}

@@ -1,0 +1,56 @@
+.main-container {
+    display: flex;
+    background-color: aliceblue;
+    font-size: 16px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+}
+.main-header h3{
+    margin-bottom: 0;
+}
+.main-header p{
+    font-style: italic;
+    margin-left: 2px;
+}
+
+.title-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header button {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(7, 63, 111);
+    color: #fff;
+    border: 1px solid #fff;
+
+
+}
+
+#tenant-asset-table {
+    width: 95%;
+    background-color: #fff;
+}
+.tabulator-placeholder {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #888;
+}
+.tabulator-placeholder img{
+    width: 200px;
+    
+}

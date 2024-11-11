@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="vi" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="geo.region" content="vi">
+    <meta name="language" content="vi">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>LOZIDO - Tất cả phiếu thu tiền nhà(hóa đơn)</title>
+    <meta name="keywords"
+        content="Phần mềm nhà trọ, phần mềm phòng trọ, phần mềm quản lý nhà trọ, phần mềm quản lý nhà trọ, quản lý nhà trọ, quản lý trọ, quản lý phòng trọ">
+    <meta name="description"
+        content="Phần mềm quản lý nhà  trọ trên điện thoại, máy tính, máy tính bảng, iPad hỗ trợ chủ nhà quản lý nhà trọ, phòng trọ, ký túc xá dễ dàng và tiện lợi mọi lúc mọi nơi, tiết kiệm thời gian và công sức">
+
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="csrf-token" content="wv93SxtU7nqZ6WkDz9gwYvBeBTq1kIqYMKCJLr2Z">
+
+    <meta name="author" content="LOZIDO - Quản lý nhà cho thuê">
+    <meta name="copyright" content="LOZIDO - Quản lý nhà cho thuê - Platform Quan ly nha tro, phong tro">
+    <meta name="abstract" content="Phần mềm quản lý nhà trọ, phòng trọ, ký túc xá, chung cư tốt nhất hiện nay">
+
+    <meta property="og:image" content="https://quanlytro.me/householder-admin/images/lozido_facebook-recovered.jpg">
+    <meta property="og:image:secure_url"
+        content="https://quanlytro.me/householder-admin/images/lozido_facebook-recovered.jpg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="370">
+    <meta property="og:image:type" content="image/webp">
+
+    <link rel="shortcut icon" href="https://quanlytro.me/images/favicon.ico" type="image/x-icon"> <!--???-->
+    <link rel="alternate" href="https://quanlytro.me/quan-ly/6920/lap-phieu-thu" hreflang="vi-vn" />
+
+    <script type="text/javascript">
+        var recaptcha_site_key = '6Ld0LAYeAAAAABA67PAls5DpnkfNJ-rkgHbsSilR';
+        var __environment = 'production';
+    </script>
+
+    <script src="../js/feather.min.js"></script>
+
+    <link href="https://unpkg.com/tabulator-tables@6.3.0/dist/css/tabulator.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@6.3.0/dist/js/tabulator.min.js"></script>
+    <!-- Chèn link CDN của Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/block.css?" rel="stylesheet">
+    <link href="../css/hoadon.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-sticky">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#lozido-main-menu" aria-controls="lozido-main-menu" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"> </span>
+                    </button>
+                    <nav class="collapse navbar-collapse lozido-main-menu">
+                        <ul class="navbar-nav main-menu-left  me-auto mb-2 mb-lg-0">
+                        </ul>
+
+                        <ul class="topbar-items main-menu-right navbar-nav">
+                            <li class="nav-item menu-item active">
+                                <a href=index.html class="nav-link ">
+                                    <i data-feather="home"></i>
+                                    <span style="margin-top: 5px" class="text">Quản lý nhà</span>
+                                </a>
+                            </li>
+                            <li class="nav-item menu-item ">
+                                <a href="./tong-bao-cao.html" class="nav-link ">
+                                    <i data-feather="pie-chart"></i>
+                                    <span style="margin-top: 5px" class="text">Tổng báo cáo</span>
+                                </a>
+                                <!--Đăng tin-->
+                                <!-- </li>
+                                                                                                                                                                <li class="nav-item menu-item ">
+                                        <a href="/dang-tin" class="nav-link ">
+                                            <i data-feather="plus"></i>
+                                            <span style="margin-top: 5px" class="text">Đăng tin</span>
+                                        </a>
+                                    </li> -->
+                                <!--Môi giới-->
+                                <!-- <li class="nav-item menu-item ">
+                                        <a href="/mo-gioi" class="nav-link ">
+                                            <i data-feather="users"></i>
+                                            <span style="margin-top: 5px" class="text">Môi giới</span>
+                                        </a>
+                                    </li> -->
+
+                                <!-- <li class="nav-item menu-item ">
+                                        <a href="/phan-quyen" class="nav-link ">
+                                            <i data-feather="box"></i>
+                                            <span style="margin-top: 5px" class="text">Công ty/nhóm</span>
+                                        </a>
+                                    </li> -->
+                            <li class="nav-item menu-item ">
+                                <a href="/cai-dat" class="nav-link ">
+                                    <i data-feather="settings"></i>
+                                    <span style="margin-top: 5px" class="text">Cài đặt chung</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item btn-group menu-item ">
+                                <a href="javascript:;" class="nav-link" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="count-notification badge">0</span>
+                                    <i data-feather="bell"></i>
+                                    <span style="margin-top: 5px" class="text">Thông báo</span>
+                                </a>
+                                <ul class="dropdown-menu notication-dropdown dropdown-menu-lg-end">
+                                    <div class="text-center" style="padding: 20px">
+                                        <img style="margin: auto" src="loading.jpg" alt="Đang tải..." width="50px" />
+                                        <div>
+                                            <i class="loading_text" style="font-size: 13px; margin-top: -10px;">Đang tải
+                                                thông báo...</i>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item menu-item ">
+                                <a href="/tai-khoan" class="nav-link ">
+                                    <i data-feather="user"></i>
+                                    <span style="margin-top: 5px" class="text">Tài khoản</span>
+                                </a>
+                            </li>
+                            <li class="nav-item menu-item ">
+                                <a href="/dang-xuat" class="nav-link ">
+                                    <i data-feather="log-out"></i>
+                                    <span style="margin-top: 5px" class="text">Đăng xuất</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+        </div>
+        </div>
+    </header>
+
+    <!--end header-->
+
+
+    <div class = "scrollable">
+        <div style="min-height: 125px;display: flex;padding: 0px 10px 0px 0px;">
+
+            <!--thanh ba chính-->
+            <div class="col-md-10" style="align-items: center; justify-content: space-between; display: flex;">
+                <div class=" scrollable-content-container"
+                    style="position: relative; align-items: center; justify-content: space-between; display: flex;overflow: hidden;">
+                    <!-- <div style="display: flex; flex-wrap: nowrap; overflow-x: auto; position: relative;"
+                        class="scrollable-content"> -->
+                    <a href="index.html" class="item-menu">
+                        <div class="icon text-center">
+                            <img width=55px src = "../assets/images/QL_Phong.png" />
+                        </div>
+                        <div class="key">
+                            <span class="title"><b>Quản lý phòng</b></span>
+                        </div>
+                    </a>
+                    <a href="./lap-phieu-thu.html" class="item-menu active">
+                        <div class="icon text-center">
+                            <img width=55px src="../assets/images/QL_HD.webp" />
+                        </div>
+                        <div class="key">
+                            <span class="title"><b>Quản lý hóa đơn</b></span>
+                        </div>
+                    </a>
+                    <a href="./quan-ly-dich-vu.html" class="item-menu">
+                        <div class="icon text-center">
+                            <img width=55px src="../assets/images/QL_DV.webp" />
+                        </div>
+                        <div class="key">
+                            <span class="title"><b>Quản lý dịch vụ</b></span>
+                        </div>
+                    </a>
+                    <!-- <a href="./quan-ly-tai-san.html" class="item-menu">
+                            <div class="icon text-center">
+                                <img width=55px src="QL_TS.webp" />
+                            </div>
+                            <div class="key">
+                                <span class="title"><b>Quản lý tài sản</b></span>
+                            </div>
+                        </a> -->
+                    <a href="./quan-ly-hop-dong.html" class="item-menu">
+                        <div class="icon text-center">
+                            <img width=55px src="../assets/images/QL_HD.webp" />
+                        </div>
+                        <div class="key">
+                            <span class="title"><b>Quản lý hợp đồng</b></span>
+                        </div>
+                    </a>
+                    <a href="./quan-ly-khach-thue.html" class="item-menu">
+                        <div class="icon text-center">
+                            <img width=55px src="../assets/images/QL_KT.webp" />
+                        </div>
+                        <div class="key">
+                            <span class="title"><b>Quản lý khách thuê</b></span>
+                        </div>
+                    </a>
+                    <a href="./quan-ly-thu-chi.html" class="item-menu">
+                        <div class="icon text-center">
+                            <img width=55px src="../assets/images/QL_TC.webp" />
+                        </div>
+                        <div class="key">
+                            <span class="title"><b>Thu/Chi - Tổng kết</b></span>
+                        </div>
+                    </a>
+                    <a href="./cai-dat.html" class="item-menu">
+                        <div class="icon text-center">
+                            <img width=55px src="../assets/images/CD.webp" />
+                        </div>
+                        <div class="key">
+                            <span class="title"><b>Cài đặt</b></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main-content">
+            <div class="month-bar-container">
+                <!-- Nút lùi về năm trước -->
+                <button id="prev-year" class="year-nav prev-year">Năm trước</button>
+
+                <!-- Thanh danh sách tháng -->
+                <div class="month-list">
+                    <div class="month-item active">
+                        <span>T.1</span>
+                        <small>2024</small>
+                    </div>
+                    <div class="month-item">
+                        <span>T.2</span>
+                        <small>2024</small>
+                    </div>
+                    <div class="month-item">
+                        <span>T.3</span>
+                        <small>2024</small>
+                    </div>
+                    <div class="month-item">
+                        <span>T.4</span>
+                        <small>2024</small>
+                    </div>
+                    <div class="month-item">
+                        <span>T.5</span>
+                        <small>2024</small>
+                    </div>
+                    <div class="month-item">
+                        <span>T.6</span>
+                        <small>2024</small>
+                    </div>
+                    <div class="month-item">
+                        <span>T.7</span>
+                        <small>2024</small>
+                    </div>
+                    <div class="month-item">
+                        <span>T.8</span>
+                        <small>2024</small>
+                    </div>
+                    <div class="month-item">
+                        <span>T.9</span>
+                        <small>2024</small>
+                    </div>
+                    <div class="month-item">
+                        <span>T.10</span>
+                        <small>2024</small>
+                    </div>
+                    <div class="month-item">
+                        <span>T.11</span>
+                        <small>2024</small>
+                    </div>
+                    <div class="month-item">
+                        <span>T.12</span>
+                        <small>2024</small>
+                    </div>
+                    <!-- Các tháng khác sẽ được thêm ở đây -->
+                </div>
+
+                <!-- Nút tiến tới năm tiếp theo -->
+                <button id="next-year" class="year-nav next-year">Năm tới</button>
+            </div>
+            <div class="header-item">
+                <h4 class="title-item">
+                    Tất cả hóa đơn - 10/2024
+                    <i style="font-size: 14px;
+                            font-weight: normal;">Tất cả hóa đơn thu tiền nhà xuất hiện ở đây</i>
+                </h4>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <div data-bs-toggle="modal" data-bs-target="#billSeries">
+                        <div class="add-round" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Tạo hóa đơn mới">
+                            <i data-feather="plus"> </i>
+                        </div>
+                    </div>
+                    <a href="/quan-ly/6920/cai-dat-nha-tro#bill_setting" class="btn btn-primary"
+                        data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Cài đặt hiển thị hóa đơn. Xuất, gửi hóa đơn tự động..."
+                        style="box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15) !important;margin-left: 25px;padding: 11px 20px;">
+                        <i data-feather="settings"> </i>
+                        <span>Cài đặt hóa đơn</span>
+                    </a>
+
+                    <div class="d-flex">
+                        <div style="width: 2px;border-left: 2px solid #ccc; margin: 3px 0px; margin-left: 10px"> </div>
+                        <button style="margin-left: 10px" id="print" class="btn btn-primary">
+                            <i data-feather="printer"></i>
+                            In h.đơn
+                        </button>
+                        <!-- <button style="margin: 0 10px; padding: 11px 20px;" id="download-excel-template-2"
+                            class="btn btn-primary">
+                            <i data-feather="file-text"></i>
+                            Xuất excel(Rút gọn)
+                        </button>
+                        <button id="download-excel-template-1" style="padding: 11px 20px;" class="btn btn-primary">
+                            <i data-feather="file-text"></i>
+                            Xuất excel(Đầy đủ)
+                        </button> -->
+                    </div>
+                </div>
+            </div>
+            <div class="header-table header-item">
+                <div class="d-flex">
+                    <div class="icon">
+                        <i data-feather="filter"> </i>
+                        <span id="filter-count">0</span>
+                    </div>
+                    <div class="d-flex">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="filter_done" data-value="status"
+                                value="done">
+                            <label class="form-check-label" for="filter_done">Hóa đơn đã thu</label>
+                            <span class="count-filter done success">0</span>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="filter_new" data-value="status"
+                                value="new">
+                            <label class="form-check-label" for="filter_new">Hóa đơn chưa thu</label>
+                            <span class="count-filter new warning">0</span>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="filter_customer_debt"
+                                data-value="status" value="customer_debt">
+                            <label class="form-check-label" for="filter_customer_debt">Hóa đơn đang nợ</label>
+                            <span class="count-filter debt error">0</span>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="filter_cancel" data-value="status"
+                                value="cancel">
+                            <label class="form-check-label" for="filter_cancel">Hóa đơn đã hủy</label>
+                            <span class="count-filter cancel disable">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex" style="align-items: center;">
+                    <select class="sort-bill" style="height: 35px; border-radius: 7px; margin-right: 10px;">
+                        <option value="room-asc">Thứ tự phòng tăng dần</option>
+                        <option value="room-desc">Thứ tự phòng giảm dần</option>
+
+                        <option value="date-desc">Sắp xếp theo ngày giảm dần</option>
+                        <option value="date-asc">Sắp xếp theo ngày tăng dần</option>
+                    </select>
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                        <line x1="4" y1="21" x2="4" y2="14"></line>
+                        <line x1="4" y1="10" x2="4" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12" y2="3"></line>
+                        <line x1="20" y1="21" x2="20" y2="16"></line>
+                        <line x1="20" y1="12" x2="20" y2="3"></line>
+                        <line x1="1" y1="14" x2="7" y2="14"></line>
+                        <line x1="9" y1="8" x2="15" y2="8"></line>
+                        <line x1="17" y1="16" x2="23" y2="16"></line>
+                    </svg>
+                </div>
+            </div>
+            <div id="tenant-bill"></div>
+        </div>
+
+    </div>
+    <script>
+        feather.replace();
+    </script>
+    <script src="../js/hoadon.js"></script>
+
+</body>
+
+</html>
