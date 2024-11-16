@@ -7,7 +7,7 @@
     <meta name="language" content="vi">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>LOZIDO - Cài đặt nhà trọ</title>
+    <title>ITMOTEL - Cài đặt nhà trọ</title>
     <meta name="keywords"
         content="Phần mềm nhà trọ, phần mềm phòng trọ, phần mềm quản lý nhà trọ, phần mềm quản lý nhà trọ, quản lý nhà trọ, quản lý trọ, quản lý phòng trọ">
     <meta name="description"
@@ -46,20 +46,6 @@
     <script type="text/javascript" src="https://unpkg.com/tabulator-tables@6.3.0/dist/js/tabulator.min.js"></script>
     <link href="../css/cai-dat.css" rel="stylesheet">
     <script src="../js/cai-dat.js"></script>
-    <!-- <style>
-        .modal.show .btn-close {
-            outline: 0;
-            box-shadow: 0 0 0 .25rem rgb(255 87 34 / 9%);
-            opacity: 1;
-            border-radius: 100%;
-            padding: 10px;
-        }
-
-        .btn {
-            font-size: 14px !important;
-            font-weight: 600 !important;
-        }
-    </style> -->
     <script type="text/javascript">
         $.ajaxSetup({
             headers: {
@@ -113,28 +99,6 @@
                                         <i data-feather="pie-chart"></i>
                                         <span style="margin-top: 5px" class="text">Tổng báo cáo</span>
                                     </a>
-                                    <!--Đăng tin-->
-                                    <!-- </li>
-                                                                                                                                                                    <li class="nav-item menu-item ">
-                                            <a href="/dang-tin" class="nav-link ">
-                                                <i data-feather="plus"></i>
-                                                <span style="margin-top: 5px" class="text">Đăng tin</span>
-                                            </a>
-                                        </li> -->
-                                    <!--Môi giới-->
-                                    <!-- <li class="nav-item menu-item ">
-                                            <a href="/mo-gioi" class="nav-link ">
-                                                <i data-feather="users"></i>
-                                                <span style="margin-top: 5px" class="text">Môi giới</span>
-                                            </a>
-                                        </li> -->
-
-                                    <!-- <li class="nav-item menu-item ">
-                                            <a href="/phan-quyen" class="nav-link ">
-                                                <i data-feather="box"></i>
-                                                <span style="margin-top: 5px" class="text">Công ty/nhóm</span>
-                                            </a>
-                                        </li> -->
                                 <li class="nav-item menu-item ">
                                     <a href="/cai-dat" class="nav-link ">
                                         <i data-feather="settings"></i>
@@ -191,7 +155,7 @@
                             class="scrollable-content"> -->
                         <a href="index.html" class="item-menu">
                             <div class="icon text-center">
-                                <img width=55px src = "../assets/images/QL_Phong.png" />
+                                <img width=55px src="../assets/images/QL_Phong.png" />
                             </div>
                             <div class="key">
                                 <span class="title"><b>Quản lý phòng</b></span>
@@ -213,14 +177,7 @@
                                 <span class="title"><b>Quản lý dịch vụ</b></span>
                             </div>
                         </a>
-                        <!-- <a href="./quan-ly-tai-san.html" class="item-menu">
-                                <div class="icon text-center">
-                                    <img width=55px src="QL_TS.webp" />
-                                </div>
-                                <div class="key">
-                                    <span class="title"><b>Quản lý tài sản</b></span>
-                                </div>
-                            </a> -->
+                        
                         <a href="./quan-ly-hop-dong.html" class="item-menu">
                             <div class="icon text-center">
                                 <img width=55px src="../assets/images/QL_HD.webp" />
@@ -259,63 +216,54 @@
 
             <div class="container">
                 <div class="m-header">
-                    <h3>Cài đặt nhà trọ</h3>
-                    <p>Các thiết lập cho nhà trọ</p>
+                  <h3>Cài đặt nhà trọ</h3>
+                  <p>Các thiết lập cho nhà trọ</p>
                 </div>
-
+              
                 <div class="content">
-
-                    <nav class="sidebar">
-                        <ul>
-                            <li class="active"><span class="icon">📦</span> Nhóm phòng</li>
-                            <li><span class="icon">📈</span> Tăng giá thuê</li>
-                            <li><span class="icon">⚙️</span> Bật tắt tính năng</li>
-                            <li><span class="icon">📑</span> Cài đặt hóa đơn</li>
-                            <li><span class="icon">💳</span> Cài đặt tài khoản ngân hàng</li>
-                            <li><span class="icon">📱</span> Thiết lập cho app khách thuê</li>
-                            <li><span class="icon">📜</span> Nội quy, giờ giấc, tiện ích cho thuê</li>
-                        </ul>
-                    </nav>
-
-                    <!--main content-->
-                    <main class="main-content">
-                        <div class="toolbar">
-                            <button onclick="goBack()">⬅️ Về trang quản lý</button>
-                            <div class="func-button">
-                                <button class="add-button">➕ Thêm nhóm</button>
-                                <button class="save-button">💾 Lưu cài đặt</button>
-                            </div>
-                        </div>
-
-                        <!-- <section class="group-section">
-                            
-                        </section> -->
-                        <div class="group-table">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Tên nhóm</th>
-                                        <th>Xóa</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Nhóm 1</td>
-                                        <td><button class="delete-btn" onclick="deleteGroup(this)">🗑️</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Nhóm 2</td>
-                                        <td><button class="delete-btn" onclick="deleteGroup(this)">🗑️</button></td>
-                                    </tr>
-                                    <!-- Thêm nhiều hàng khác nếu cần -->
-                                </tbody>
-                            </table>
-                        </div>
-                        
-
-                    </main>
+                  <nav class="sidebar">
+                    <ul>
+                      <li class="active"><span class="icon">📦</span> Nhóm phòng</li>
+                      <li><span class="icon">📈</span> Tăng giá thuê</li>
+                      <li><span class="icon">⚙️</span> Bật tắt tính năng</li>
+                      <li><span class="icon">📑</span> Cài đặt hóa đơn</li>
+                      <li><span class="icon">💳</span> Cài đặt tài khoản ngân hàng</li>
+                      <li><span class="icon">📜</span> Nội quy, giờ giấc, tiện ích cho thuê</li>
+                    </ul>
+                  </nav>
+              
+                  <main class="main-content">
+                    <div class="toolbar">
+                      <button onclick="goBack()">⬅️ Về trang quản lý</button>
+                      <div class="func-button">
+                        <button class="add-button">➕ Thêm nhóm</button>
+                        <button class="save-button">💾 Lưu cài đặt</button>
+                      </div>
+                    </div>
+              
+                    <div class="group-table">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Tên nhóm</th>
+                            <th>Xóa</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Nhóm 1</td>
+                            <td><button class="delete-btn" onclick="deleteGroup(this)">🗑️</button></td>
+                          </tr>
+                          <tr>
+                            <td>Nhóm 2</td>
+                            <td><button class="delete-btn" onclick="deleteGroup(this)">🗑️</button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </main>
                 </div>
-            </div>
+              </div>
 
             <script>
                 feather.replace();
