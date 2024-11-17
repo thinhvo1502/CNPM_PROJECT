@@ -37,8 +37,8 @@ document.getElementById('next-year').addEventListener('click', function () {
 // updateMonthList(currentYear);
 
 var tableData = [
-    {roomName: "Chung Cư Đảo Kim Cương", tenantName: "Nguyễn Thiên Khiêm", electronicBill: "300,000,000đ", waterBill: "500,000,000đ", total: "800,000,000đ",status: "Đã thu 10 năm"},
-    {roomName: "Chung Cư Đảo Kim Cương", tenantName: "Nguyễn Thiên Khiêm", electronicBill: "300,000,000đ", waterBill: "500,000,000đ", total: "800,000,000đ",status: "Đã thu 10 năm"}
+    // {type: "Tiền cọc",roomName: "Chung Cư Đảo Kim Cương", tenantName: "Nguyễn Thiên Khiêm", roomBill: "300,000,000", electronicBill: "300,000,000đ", waterBill: "500,000,000đ", total: "800,000,000đ",status: "Đã thu 10 năm"},
+    // {type: "Tiền phòng", roomName: "Chung Cư Đảo Kim Cương", tenantName: "Nguyễn Thiên Khiêm", roomBill: "300,000,000", electronicBill: "300,000,000đ", waterBill: "500,000,000đ", total: "800,000,000đ",status: "Đã thu 10 năm"}
 
 ];
 
@@ -47,6 +47,47 @@ var printIcon = function(cell, formatterParams, onRendered) {
     // return "<i class='fa-solid fa-wallet'></i>"; // Trả về mã HTML cho biểu tượng in
     return "<i class='fa-solid fa-file-invoice'></i>"
 };
+
+function showContextMenu(event, button, rowData) {
+    // Tạo hoặc lấy menu popup
+    let popupMenu = document.getElementById("popupMenu");
+    // if (!popupMenu) {
+    //     popupMenu = document.createElement("div");
+    //     popupMenu.id = "popupMenu";
+    //     popupMenu.className = "popup-menu";
+    //     popupMenu.innerHTML = `
+    //         <div class="bill-menu-item">Xem chi tiết hóa đơn</div>
+    //         <div class="bill-menu-item">Thu tiền</div>
+    //         <div class="bill-menu-item">Chỉnh sửa</div>
+    //         <div class="bill-menu-item">In hóa đơn</div>
+    //         <div class="bill-menu-item">Gửi hóa đơn</div>
+    //         <div class="bill-menu-item cancel">Hủy hóa đơn</div>
+    //     `;
+    //     document.body.appendChild(popupMenu);
+    // }
+
+    // Hiển thị menu bên cạnh nút
+    popupMenu.style.display = "block";
+    popupMenu.style.top = `${event.clientY}px`;
+    popupMenu.style.left = `${event.clientX}px`;
+
+    // Xử lý sự kiện click cho từng mục
+    popupMenu.querySelectorAll(".bill-menu-item").forEach(item => {
+        item.addEventListener("click", () => {
+            console.log("Mục được chọn:", item.textContent, rowData);
+            popupMenu.style.display = "none"; // Ẩn menu sau khi chọn
+        });
+    });
+
+    // Đóng menu khi click ra ngoài
+    document.addEventListener("click", function hideMenu(e) {
+        if (!popupMenu.contains(e.target) && e.target !== button) {
+            popupMenu.style.display = "none";
+            document.removeEventListener("click", hideMenu);
+        }
+    });
+}
+
 
 // Khởi tạo bảng Tabulator
 var table = new Tabulator("#tenant-bill", {
@@ -61,12 +102,34 @@ var table = new Tabulator("#tenant-bill", {
     // footerElement:"<button>Custom Button</button>", //add a custom button to the footer element
     columns: [
         // {title:"Name", field:"name", frozen:true}, //frozen column on left of table
-        {title: "Tên Phòng", field: "roomName", hozAlign: "center", width: 200}, 
-        {title: "Tên Khách Thuê", field: "tenantName", hozAlign: "center"},
-        {title: "Tiền điện", field: "electronicBill", hozAlign: "center", editor: "select", editorParams: {values: ["Đang thuê", "Trống"]}},
-        {title: "Tiền nước", field: "waterBill", hozAlign: "right", editor: "number"},
-        {title: "Tổng cộng", field: "total", hozAlign: "right", editor: "number"},
-        {title: "Trạng thái", field: "status", hozAlign: "center", editor: "number"},
+        {title: "Loại hóa đơn",field: "type"},
+        {title: "Tên Phòng", field: "roomName", width: 200}, 
+        {title: "Tên Khách Thuê", field: "tenantName"},
+        {title: "Tiền phòng", field: "roomBill"},
+        {title: "Tiền điện", field: "electronicBill", editor: "select", editorParams: {values: ["Đang thuê", "Trống"]}},
+        {title: "Tiền nước", field: "waterBill"},
+        {title: "Tổng cộng", field: "total"},
+        {title: "Trạng thái", field: "status"},
+         {
+            title: "",
+            field: "actions",
+            width: 45,
+            formatter: function() {
+                return '<button id = "actionBtn"class="action-btn">⋮</button>';
+            },
+            hozAlign: "center",
+            cellClick: function(e, cell) {
+                const button = e.target; // Nút được click
+            const row = cell.getRow(); // Dòng hiện tại
+            const rowData = row.getData(); // Dữ liệu dòng hiện tại
+
+            // Hiển thị context menu hoặc xử lý logic khác
+            console.log("Nút đã được click trong dòng:", rowData);
+
+            // Ví dụ: Hiển thị context menu bên cạnh button
+            showContextMenu(e, button, rowData);
+            }
+        }
     ],
     rowHeader:{formatter: printIcon, width: 30, hozAlign: "center"},
     rowContextMenu: [
@@ -79,3 +142,55 @@ var table = new Tabulator("#tenant-bill", {
         }
     ]
 });
+
+
+document.getElementById("openFormBtn").onclick = function(){
+    document.getElementById("invoiceForm").style.display = "block";
+    document.getElementById("overlay").style.display = "block";
+}
+document.getElementById("extButton").onclick = function(){
+    document.getElementById("invoiceForm").style.display = "none";
+    document.getElementById("overlay").style.display = "none"
+}
+ // nút và menu 
+// Kiểm tra xem menuButton và popupMenu có tồn tại không trước khi thêm sự kiện
+// document.addEventListener('DOMContentLoaded', function() {
+//     const menuButton = document.getElementById("actionBtn");
+//     const popupMenu = document.getElementById("popupMenu");
+
+//     if (menuButton && popupMenu) {
+//         // Khi nhấn vào nút, chuyển đổi hiển thị của menu
+//         menuButton.addEventListener('click', () => {
+//             // Lấy vị trí của nút
+//             const rect = menuButton.getBoundingClientRect();
+            
+//             // Đặt vị trí của menu ở phía trên và bên trái nút
+//               // Đặt vị trí của menu ở phía trên bên trái của nút
+//               popupMenu.style.position = 'absolute';
+//               popupMenu.style.bottom = `${rect.top - 120}px`; // Phía trên nút
+//               popupMenu.style.right = `50x`; // Bên trái nút
+
+//             // Chuyển đổi hiển thị của menu
+//             popupMenu.style.display = popupMenu.style.display === 'block' ? 'none' : 'block';
+//         });
+
+//         // Đóng menu khi nhấn bên ngoài
+//         document.addEventListener('click', (event) => {
+//             if (!menuButton.contains(event.target) && !popupMenu.contains(event.target)) {
+//                 popupMenu.style.display = 'none';
+//             }
+//         });
+//     } else {
+//         console.warn("Không tìm thấy phần tử 'menuButton' hoặc 'popupMenu'.");
+//     }
+// });
+
+
+// Các hàm xử lý context menu
+function editBill(type) {
+    alert(`Chỉnh sửa hóa đơn loại: ${type}`);
+}
+
+function deleteRow(type) {
+    alert(`Xóa dòng với loại: ${type}`);
+}

@@ -1,4 +1,44 @@
+
 #tenant-contract-table {
     width: 100%;
     background-color: #fff;
+}
+
+.contract-container {
+    background-color: white;
+  padding: 20px;
+  width: 400px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.contract-container input, select {
+    margin: 5px 0;
+  padding: 8px;
+  width: 100%;
+}
+.form-container {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.serviceInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.service-item {
+  display: flex;
+  /* align-items: center; */
+  /* gap: 10px; */
+}
+.service-item input {
+  margin-left: auto;
+}
+.service-item label {
+  margin-right: 8px; /* Adjust spacing between label and checkbox */
+  /* width: 120px;      Set a fixed width to align labels */
+  min-width: 100px;
+  white-space: nowrap;
 }

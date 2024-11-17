@@ -144,7 +144,8 @@
     <!--end header-->
 
 
-    <div class = "scrollable">
+    <div class="scrollable">
+        <div id="overlay" class="overlay"></div>
         <div style="min-height: 125px;display: flex;padding: 0px 10px 0px 0px;">
 
             <!--thanh ba chính-->
@@ -155,7 +156,7 @@
                         class="scrollable-content"> -->
                     <a href="index.html" class="item-menu">
                         <div class="icon text-center">
-                            <img width=55px src = "../assets/images/QL_Phong.png" />
+                            <img width=55px src="../assets/images/QL_Phong.png" />
                         </div>
                         <div class="key">
                             <span class="title"><b>Quản lý phòng</b></span>
@@ -290,12 +291,74 @@
                             font-weight: normal;">Tất cả hóa đơn thu tiền nhà xuất hiện ở đây</i>
                 </h4>
                 <div style="display: flex; justify-content: center; align-items: center;">
-                    <div data-bs-toggle="modal" data-bs-target="#billSeries">
-                        <div class="add-round" data-bs-toggle="tooltip" data-bs-placement="left"
-                            title="Tạo hóa đơn mới">
+                    <button id="openFormBtn" class="add-round">
+                        <span data-bs-toggle="tooltip" data-bs-placement="left" title="Lập hóa đơn mới">
                             <i data-feather="plus"> </i>
+                        </span>
+                    </button>
+                    <!--Form lập hóa đơn-->
+                    <div id="invoiceForm" class="invoice-form-overlay">
+                        <div class="invoice-form">
+                            <div class="header-form">
+                                <h2>Lập Hóa Đơn</h2>
+                                <button id="extButton" class="exitButton">
+                                    <i data-feather="x"></i>
+                                </button>
+                            </div>
+
+
+                            <!--Chọn dịch vụ-->
+                            <div class="service-selection">
+                                <h3>Chọn Dịch Vụ</h3>
+                                <div class="service-items">
+                                    <label><input type="checkbox" name="service" value="Dịch vụ điện">Dịch vụ
+                                        điện</label>
+                                    <label><input type="checkbox" name="service" value="Dịch vụ nước">Dịch vụ
+                                        nước</label>
+                                    <label><input type="checkbox" name="service" value="Dịch vụ vệ sinh">Dịch vụ vệ
+                                        sinh</label>
+                                    <label><input type="checkbox" name="service" value="Dịch vụ internet"> Dịch vụ
+                                        internet</label>
+                                </div>
+
+                            </div>
+
+                            <!--Thông tin hóa đơn-->
+                            <div class="invoice-details">
+                                <h3>Thông Tin Hóa Đơn</h3>
+
+                                <label for="room">Phòng: </label>
+                                <input type="text" id="room" required><br>
+
+                                <label for="invoiceType">Loại Hóa Đơn:</label>
+                                <select id="invoiceType">
+                                    <option value="deposit">Tiền đặc cọc</option>
+                                    <option value="rent">Tiền Thuê Phòng</option>
+                                </select><br>
+
+                                <div id="rentMonthField" style="display: none;">
+                                    <label for="rentMonth">Tháng Lập Hóa Đơn:</label>
+                                    <input type="month" id="rentMonth"><br>
+                                </div>
+
+                                <label for="invoiceDate">Ngày Lập Hóa Đơn:</label>
+                                <input type="date" id="invoiceDate" required><br>
+
+                                <label for="dueDate">Hạn Đóng Tiền:</label>
+                                <input type="date" id="dueDate" required><br>
+
+                                <label for="startDate">Ngày Ở Từ:</label>
+                                <input type="date" id="startDate" required><br>
+
+                                <label for="endDate">Đến Ngày:</label>
+                                <input type="date" id="endDate" required><br>
+
+                                <button type="button" id="smtBtn" class="submitButton" onclick="submitInvoice()">Lưu Hóa
+                                    Đơn</button>
+                            </div>
                         </div>
                     </div>
+
                     <a href="/quan-ly/6920/cai-dat-nha-tro#bill_setting" class="btn btn-primary"
                         data-bs-toggle="tooltip" data-bs-placement="left"
                         title="Cài đặt hiển thị hóa đơn. Xuất, gửi hóa đơn tự động..."
@@ -328,6 +391,10 @@
                         <i data-feather="filter"> </i>
                         <span id="filter-count">0</span>
                     </div>
+
+                    <!--lọc-->
+
+
                     <div class="d-flex">
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="checkbox" id="filter_done" data-value="status"
@@ -358,7 +425,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex" style="align-items: center;">
+
+                <!--lọc -->
+
+                <!-- <div class="d-flex" style="align-items: center;">
                     <select class="sort-bill" style="height: 35px; border-radius: 7px; margin-right: 10px;">
                         <option value="room-asc">Thứ tự phòng tăng dần</option>
                         <option value="room-desc">Thứ tự phòng giảm dần</option>
@@ -378,9 +448,19 @@
                         <line x1="9" y1="8" x2="15" y2="8"></line>
                         <line x1="17" y1="16" x2="23" y2="16"></line>
                     </svg>
-                </div>
+                </div> -->
             </div>
             <div id="tenant-bill"></div>
+
+            <!--menu ẩn, hiển thị khi nhấn vào nút-->
+            <div id="popupMenu" class="popup-menu">
+                <div class="bill-menu-item">Xem chi tiết hóa đơn</div>
+                <div class="bill-menu-item">Thu tiền</div>
+                <div class="bill-menu-item">Chỉnh sửa</div>
+                <div class="bill-menu-item">In hóa đơn</div>
+                <div class="bill-menu-item">Gửi hóa đơn</div>
+                <div class="bill-menu-item cancel">Hủy hóa đơn</div>
+            </div>
         </div>
 
     </div>

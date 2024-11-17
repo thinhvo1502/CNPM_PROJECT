@@ -1,11 +1,12 @@
 var tableData = [
-    {room: "Phòng 1", electricityOld: 0, electricityNew: 5, electricityAmount: "8.500 ₫", waterOld: 0, waterNew: 4, waterAmount: "450.000 ₫", wifiUsed: 2, wifiAmount: "200.000 ₫"},
-    {room: "Phòng 2", electricityOld: 0, electricityNew: 12, electricityAmount: "20.400 ₫", waterOld: 0, waterNew: 21, waterAmount: "378.000 ₫", wifiUsed: 2, wifiAmount: "200.000 ₫"},
+    // {room: "Phòng 1", electricityOld: 0, electricityNew: 5, electricityAmount: "8.500 ₫", waterOld: 0, waterNew: 4, waterAmount: "450.000 ₫", wifiUsed: 2, wifiAmount: "200.000 ₫"},
+    // {room: "Phòng 2", electricityOld: 0, electricityNew: 12, electricityAmount: "20.400 ₫", waterOld: 0, waterNew: 21, waterAmount: "378.000 ₫", wifiUsed: 2, wifiAmount: "200.000 ₫"},
 ];
 
 var table = new Tabulator("#tenant-service-table", {
     data: tableData,
     layout: "fitColumns", // Điều chỉnh chiều rộng các cột tự động lấp đầy bảng
+    placeholder:"No data available",
     columns: [
         {title: "Tên phòng", field: "room"},
         {

@@ -164,6 +164,7 @@
         </div>
     </header>
     <div class="scrollable">
+        <div id="overlay" class="overlay"></div>
         <div style="min-height: 125px;display: flex;padding: 0px 10px 0px 0px;">
             <div class="col-md-10" style="align-items: center; justify-content: space-between; display: flex;">
                 <div class=" scrollable-content-container"
@@ -172,7 +173,7 @@
                         class="scrollable-content"> -->
                     <a href="index.html" class="item-menu">
                         <div class="icon text-center">
-                            <img width=55px src = "../assets/images/QL_Phong.png" />
+                            <img width=55px src="../assets/images/QL_Phong.png" />
                         </div>
                         <div class="key">
                             <span class="title"><b>Quản lý phòng</b></span>
@@ -252,6 +253,67 @@
                         <i data-feather="plus"> </i>
                     </span>
                 </button>
+                <div id="contract-form" class="form-popup">
+                    <div class="form-container">
+                        <!--phòng-->
+                        <span class="close-btn" onclick="closeForm()">&times;</span>
+                        <h3>Thêm phòng</h3>
+                        <label for="roomInfo">Phòng</label>
+                        <select id="roomInfo" required>
+                            <option value="Phòng 113">Phòng 113</option>
+                            <option value="Phòng 223">Phòng 223</option>
+                        </select>
+
+                        <div class="contractTime">
+                            <label for="selectContractTime">Thời hạn hợp đồng</label>
+                            <select id="selectContractTime" requiredq>
+                                <option value="1 năm">1 năm</option>
+                                <option value="10 năm">10 năm</option>
+                            </select>
+
+                            <label for="startDate">Ngày vào ở</label>
+                            <input type="date" id="startDate" required>
+                            <label for="endDate">Ngày kết thúc</label>
+                            <input type="date" id="endDate" required>
+
+                        </div>
+
+                        <div class="tenantInfo">
+                            <label for="numberOfTenants">Số lương thành viên</label>
+                            <input type="text" id="numberOfTenants" class="formattedNumberInput" required>
+
+                            <label for="tenantName">Tên người ở</label>
+                            <input type="text" id="tenantName" required>
+
+                            <label for="phoneNumber">Số điện thoại</label>
+                            <input type="text" id="phoneNumber" required>
+                        </div>
+
+
+                        <div class="serviceInfo">
+                            <!-- <label for="service-selection">Dịch vụ</label> -->
+                            <div class="service-item">
+                                <label for="electric">Dịch vụ điện</label>
+                                <input id="electric" type="checkbox" name="service" value="Dịch vụ điện">
+                            </div>
+                            <div class="service-item">
+                                <label for="water">Dịch vụ nước</label>
+                                <input type="checkbox" name="service" value="Dịch vụ nước">
+                            </div>
+                            <div class="service-item">
+                                <label>Dịch vụ vệ sinh</label>
+                                <input type="checkbox" name="service" value="Dịch vụ vệ sinh">
+                            </div>
+                            <div class="service-item">
+                                <label>Dịch vụ internet</label>
+                                <input type="checkbox" name="service" value="Dịch vụ internet">
+                            </div>
+                        </div>
+                        <button type="button" id="addContractBtn">Thêm hợp đồng</button>
+
+                    </div>
+
+                </div>
             </div>
 
             <div class="header-table header-item">

@@ -29,9 +29,12 @@
     <!-- <script src="sweetalert2@11"></script>
     <script src="popper.min.js"></script>
     <script src="bootstrap.min.js"></script> -->
+    <script src="../js/bootstrap.min.js"></script>
     <link href="https://unpkg.com/tabulator-tables@6.3.0/dist/css/tabulator.min.css" rel="stylesheet">
     <script type="text/javascript" src="https://unpkg.com/tabulator-tables@6.3.0/dist/js/tabulator.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
     <!-- cài đặt token CSRF cho các yêu cầu AJAX-->
     <!-- <script type="text/javascript">
         $.ajaxSetup({
@@ -44,7 +47,7 @@
         var __permission_block = JSON.parse(JSON.stringify(null));
 
         let user = JSON.parse(JSON.stringify({ "staff": false, "free": false, "trial": true, "fee": false }));
-
+           
     </script> -->
     <!--chứa thông tin người dùng hiện tại-->
     <!--liên kết với các tệp css-->
@@ -137,6 +140,7 @@
     <!--endHeader-->
 
     <div class="scrollable">
+        
         <!--thanh ba-->
         <div style="min-height: 125px;display: flex;padding: 0px 10px 0px 0px;">
             <!--Thanh ba chính-->
@@ -264,43 +268,54 @@
                     </span>
                 </button>
                 <!-- Lớp phủ mờ -->
-                <div id="overlay" class="overlay" onclick="closeForm()"></div>
-                <div id="addRoomForm" class="form-popup">
-                    <form class="form-container">
-                        <span class="close-btn" onclick="closeForm()">&times;</span>
-                        <h3>Thêm phòng</h3>
-
-                        <!--Thông tin phòng-->
-                        <label for="roomName">Tên phòng</label>
-                        <input type="text" id="roomName" required>
-
-                        <label for="floor">Tầng/dãy </label>
-                        <select id="floor" required>
-                            <option value="Tầng trệt">Tầng trệt</option>
-                            <option value="Tầng một">Tầng một</option>
-                        </select>
-
-                        <label for="area">Diện tích</label>
-                        <input type="number" id="area" required>
-
-                        <label for="rentPrice">Gía thuê (đ)</label>
-                        <input type="number" id="rentPrice" required>
-
-                        <label for="roomType">Loại phòng</label>
-                        <select id="roomType">
-                            <option value="Phòng đơn">Phòng đơn</option>
-                            <option value="Phòng đôi">Phòng đôi</option>
-                            <option value="Phòng gia đình">Phòng gia đình</option>
-                        </select>
-
-                        <label for="desc">Mô tả</label>
-                        <input type="text" id="des">
-
-                        <button type="button" onclick="addRoom()">Thêm phòng</button>
-                    </form>
+                <div id="overlay" class="overlay">
+                    <div id="addRoomForm" class="form-popup">
+                        <form class="form-container">
+                            <span class="close-btn" onclick="closeForm()">&times;</span>
+                            <h3>Thêm phòng</h3>
+    
+                            <!--Thông tin phòng-->
+                            <label for="roomName">Tên phòng</label>
+                            <input type="text" id="roomName" required>
+    
+                            <label for="floor">Tầng/dãy </label>
+                            <select id="floor" required>
+                                <option value="Tầng trệt">Tầng trệt</option>
+                                <option value="Tầng một">Tầng một</option>
+                            </select>
+    
+                            <label for="area">Diện tích</label>
+                            <input type="text" id="area" class = "formattedNumberInput" required>
+    
+                            <label for="rentPrice">Giá thuê (đ)</label>
+                            <input type="text" id="rentPrice" class = "formattedNumberInput" required>
+    
+                            <label for="roomType">Loại phòng</label>
+                            <select id="roomType">
+                                <option value="Phòng đơn">Phòng đơn</option>
+                                <option value="Phòng đôi">Phòng đôi</option>
+                                <option value="Phòng gia đình">Phòng gia đình</option>
+                            </select>
+    
+                            <label for="desc">Mô tả</label>
+                            <input type="text" id="des">
+    
+                            <button type="button" onclick="addRoom()">Thêm phòng</button>
+                        </form>
+                    </div>
                 </div>
+                <!--form xác nhận xóa-->
+                <div id = "deleteConfirmationForm" style = "display: none;">
+                    <div class = "modal-content">
+                        <h4>Xác nhận xóa</h4>
+                        <p>Bạn có chắc chắn muốn xóa phòng này ?</p>
+                        <button id = "confirm-delete" class = "btn btn-danger">Xóa</button>
+                        <button id = "cancel-delete" class = "btn btn-secondary">Hủy</button>
+                    </div>
+                </div>
+                
                 <!--nút lọc-->
-                <div class="d-flex" style="margin-left: 40px;">
+                <!-- <div class="d-flex" style="margin-left: 40px;">
                     <div class="dropdown">
                         <button style="height: 100%" class="btn btn-primary dropdown-toggle" type="button"
                             id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
@@ -360,13 +375,14 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div id="room-table"></div>
         </div>
     </div>
     <script>feather.replace();</script>
     <script src="../js/roomManagement.js"></script>
+    <script src = '../js/common.js'></script>
 </body>
 
 </html>

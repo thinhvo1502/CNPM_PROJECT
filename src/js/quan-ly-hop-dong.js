@@ -16,3 +16,14 @@ var table = new Tabulator("#tenant-contract-table",{
     ]
     
 })
+
+// mở form thêm hợp đồng
+document.getElementById("addContract").onclick = function (){
+    document.getElementById("contract-form").style.display = "block";
+    document.getElementById("overlay").style.display = "block";
+}
+// đóng form thêm
+function closeForm() {
+    document.getElementById("contract-form").style.display = "none";
+    document.getElementById("overlay").style.display = "none";
+}

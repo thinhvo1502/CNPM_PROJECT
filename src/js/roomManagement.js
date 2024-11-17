@@ -1,29 +1,29 @@
 
 var tableData = [
-    {room: "Phòng 101", group: "Nhóm A", status: "Đang thuê", price: "3,000,000đ", deposit: "1,000,000đ", debt: "0đ", 
-     occupants: 2, area: "30m2", startDate: "01/01/2024", endDate: "01/01/2025", roomType: "Thường", 
-     note: "Không", tenant: "Nguyễn Văn A"},
-    {room: "Phòng 101", group: "Nhóm A", status: "Đang thuê", price: "3,000,000đ", deposit: "1,000,000đ", debt: "0đ", 
-     occupants: 2, area: "30m2", startDate: "01/01/2024", endDate: "01/01/2025", roomType: "Thường", 
-     note: "Không", tenant: "Nguyễn Văn A"},
-     {room: "Phòng 101", group: "Nhóm A", status: "Đang thuê", price: "3,000,000đ", deposit: "1,000,000đ", debt: "0đ", 
-        occupants: 2, area: "30m2", startDate: "01/01/2024", endDate: "01/01/2025", roomType: "Thường", 
-        note: "Không", tenant: "Nguyễn Văn A"},
-    {room: "Phòng 101", group: "Nhóm A", status: "Đang thuê", price: "3,000,000đ", deposit: "1,000,000đ", debt: "0đ", 
-        occupants: 2, area: "30m2", startDate: "01/01/2024", endDate: "01/01/2025", roomType: "Thường", 
-        note: "Không", tenant: "Nguyễn Văn A"},
-        {room: "Phòng 101", group: "Nhóm A", status: "Đang thuê", price: "3,000,000đ", deposit: "1,000,000đ", debt: "0đ", 
-            occupants: 2, area: "30m2", startDate: "01/01/2024", endDate: "01/01/2025", roomType: "Thường", 
-            note: "Không", tenant: "Nguyễn Văn A"},
-            {room: "Phòng 101", group: "Nhóm A", status: "Đang thuê", price: "3,000,000đ", deposit: "1,000,000đ", debt: "0đ", 
-                occupants: 2, area: "30m2", startDate: "01/01/2024", endDate: "01/01/2025", roomType: "Thường", 
-                note: "Không", tenant: "Nguyễn Văn A"},
-                {room: "Phòng 101", group: "Nhóm A", status: "Đang thuê", price: "3,000,000đ", deposit: "1,000,000đ", debt: "0đ", 
-                    occupants: 2, area: "30m2", startDate: "01/01/2024", endDate: "01/01/2025", roomType: "Thường", 
-                    note: "Không", tenant: "Nguyễn Văn A"},
-                    {room: "Phòng 101", group: "Nhóm A", status: "Đang thuê", price: "3,000,000đ", deposit: "1,000,000đ", debt: "0đ", 
-        occupants: 2, area: "30m2", startDate: "01/01/2024", endDate: "01/01/2025", roomType: "Thường", 
-        note: "Không", tenant: "Nguyễn Văn A"},
+    // {room: "Phòng 101", group: "Nhóm A", status: "Đang thuê", price: "3,000,000đ", deposit: "1,000,000đ", debt: "0đ", 
+    //  occupants: 2, area: "30m2", startDate: "01/01/2024", endDate: "01/01/2025", roomType: "Thường", 
+    //  note: "Không", tenant: "Nguyễn Văn A"},
+    // {room: "Phòng 101", group: "Nhóm A", status: "Đang thuê", price: "3,000,000đ", deposit: "1,000,000đ", debt: "0đ", 
+    //  occupants: 2, area: "30m2", startDate: "01/01/2024", endDate: "01/01/2025", roomType: "Thường", 
+    //  note: "Không", tenant: "Nguyễn Văn A"},
+    //  {room: "Phòng 101", group: "Nhóm A", status: "Đang thuê", price: "3,000,000đ", deposit: "1,000,000đ", debt: "0đ", 
+    //     occupants: 2, area: "30m2", startDate: "01/01/2024", endDate: "01/01/2025", roomType: "Thường", 
+    //     note: "Không", tenant: "Nguyễn Văn A"},
+    // {room: "Phòng 101", group: "Nhóm A", status: "Đang thuê", price: "3,000,000đ", deposit: "1,000,000đ", debt: "0đ", 
+    //     occupants: 2, area: "30m2", startDate: "01/01/2024", endDate: "01/01/2025", roomType: "Thường", 
+    //     note: "Không", tenant: "Nguyễn Văn A"},
+    //     {room: "Phòng 101", group: "Nhóm A", status: "Đang thuê", price: "3,000,000đ", deposit: "1,000,000đ", debt: "0đ", 
+    //         occupants: 2, area: "30m2", startDate: "01/01/2024", endDate: "01/01/2025", roomType: "Thường", 
+    //         note: "Không", tenant: "Nguyễn Văn A"},
+    //         {room: "Phòng 101", group: "Nhóm A", status: "Đang thuê", price: "3,000,000đ", deposit: "1,000,000đ", debt: "0đ", 
+    //             occupants: 2, area: "30m2", startDate: "01/01/2024", endDate: "01/01/2025", roomType: "Thường", 
+    //             note: "Không", tenant: "Nguyễn Văn A"},
+    //             {room: "Phòng 101", group: "Nhóm A", status: "Đang thuê", price: "3,000,000đ", deposit: "1,000,000đ", debt: "0đ", 
+    //                 occupants: 2, area: "30m2", startDate: "01/01/2024", endDate: "01/01/2025", roomType: "Thường", 
+    //                 note: "Không", tenant: "Nguyễn Văn A"},
+    //                 {room: "Phòng 101", group: "Nhóm A", status: "Đang thuê", price: "3,000,000đ", deposit: "1,000,000đ", debt: "0đ", 
+    //     occupants: 2, area: "30m2", startDate: "01/01/2024", endDate: "01/01/2025", roomType: "Thường", 
+    //     note: "Không", tenant: "Nguyễn Văn A"},
 ];
 // Định nghĩa định dạng tùy chỉnh
 var printIcon = function(cell, formatterParams, onRendered) {
@@ -62,15 +62,28 @@ var table = new Tabulator("#room-table", {
         {
             label:"Xóa",
             action:function(e, row){
-                // Xóa hàng
+                document.getElementById("deleteConfirmationForm").style.display = "flex";
+                document.getElementById("overlay").style.display = "block";
+
+                // xử lý xóa
+            document.getElementById("confirm-delete").onclick = function(){
                 row.delete();
+                document.getElementById("deleteConfirmationForm").style.display = "none";
+                document.getElementById("overlay").style.display = "none";
             }
+            // xử lý hủy trong modal
+            document.getElementById("cancel-delete").onclick = function(){
+                document.getElementById("deleteConfirmationForm").style.display = "none";
+                document.getElementById("overlay").style.display = "none";
+            }
+            }
+
+            
         }
     ]
 });
 // Mở form
 document.getElementById("openFormBtn").onclick = function() {
-    console.log(12)
     document.getElementById("addRoomForm").style.display = "block";
     document.getElementById("overlay").style.display = "block";
 }
@@ -86,3 +99,5 @@ function addRoom() {
     alert("Phòng đã được thêm!");
     closeForm();
 }
+
+

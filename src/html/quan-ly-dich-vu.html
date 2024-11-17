@@ -239,7 +239,7 @@
                 </div>
             </div>
         </div>
-        <div id="overlay" class="overlay" onclick="closeForm()"></div>
+        <div id="overlay" class="overlay"></div>
         <div class="main-container">
             <div class="service-management">
                 <div class="service-management-header">
@@ -273,7 +273,7 @@
                             </select>
 
                             <label for="servicePrice">Giá dịch vụ</label>
-                            <input type="text" id="servicePrice" required>
+                            <input type="text" id="servicePrice" class="formattedNumberInput" required>
 
                             <button type="button" onclick="addService()">Thêm mới</button>
                         </form>
@@ -345,6 +345,7 @@
         feather.replace();
     </script>
     <script src="../js/quan-ly-dich-vu.js"></script>
+    <script src = "../js/common.js"></script>
 </body>
 
 </html>
