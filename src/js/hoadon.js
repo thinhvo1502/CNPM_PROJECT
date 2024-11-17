@@ -152,38 +152,6 @@ document.getElementById("extButton").onclick = function(){
     document.getElementById("invoiceForm").style.display = "none";
     document.getElementById("overlay").style.display = "none"
 }
- // nút và menu 
-// Kiểm tra xem menuButton và popupMenu có tồn tại không trước khi thêm sự kiện
-// document.addEventListener('DOMContentLoaded', function() {
-//     const menuButton = document.getElementById("actionBtn");
-//     const popupMenu = document.getElementById("popupMenu");
-
-//     if (menuButton && popupMenu) {
-//         // Khi nhấn vào nút, chuyển đổi hiển thị của menu
-//         menuButton.addEventListener('click', () => {
-//             // Lấy vị trí của nút
-//             const rect = menuButton.getBoundingClientRect();
-            
-//             // Đặt vị trí của menu ở phía trên và bên trái nút
-//               // Đặt vị trí của menu ở phía trên bên trái của nút
-//               popupMenu.style.position = 'absolute';
-//               popupMenu.style.bottom = `${rect.top - 120}px`; // Phía trên nút
-//               popupMenu.style.right = `50x`; // Bên trái nút
-
-//             // Chuyển đổi hiển thị của menu
-//             popupMenu.style.display = popupMenu.style.display === 'block' ? 'none' : 'block';
-//         });
-
-//         // Đóng menu khi nhấn bên ngoài
-//         document.addEventListener('click', (event) => {
-//             if (!menuButton.contains(event.target) && !popupMenu.contains(event.target)) {
-//                 popupMenu.style.display = 'none';
-//             }
-//         });
-//     } else {
-//         console.warn("Không tìm thấy phần tử 'menuButton' hoặc 'popupMenu'.");
-//     }
-// });
 
 
 // Các hàm xử lý context menu
@@ -194,3 +162,5 @@ function editBill(type) {
 function deleteRow(type) {
     alert(`Xóa dòng với loại: ${type}`);
 }
+
+// xoá dịch vụ

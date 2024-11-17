@@ -163,6 +163,16 @@
         </div>
     </header>
     <!--thanh ba chính-->
+    <div id="deleteConfirmForm">
+        <div class="delete-confirm-container">
+            <h2>Xác nhận xóa dịch vụ</h2>
+            <p>Bạn có chắc chắn muốn xóa dịch vụ này không? Hành động này không thể hoàn tác.</p>
+            <div class="delete-actions">
+                <button class="btn-cancel" id="cancel">Hủy</button>
+                <button class="btn-delete" id="delete">Xóa</button>
+            </div>
+        </div>
+    </div>
     <div class="scrollable">
         <div style="min-height: 125px;display: flex;padding: 0px 10px 0px 0px;">
 
@@ -174,7 +184,7 @@
                         class="scrollable-content"> -->
                     <a href="index.html" class="item-menu">
                         <div class="icon text-center">
-                            <img width=55px src = "../assets/images/QL_Phong.png" />
+                            <img width=55px src="../assets/images/QL_Phong.png" />
                         </div>
                         <div class="key">
                             <span class="title"><b>Quản lý phòng</b></span>
@@ -239,6 +249,7 @@
                 </div>
             </div>
         </div>
+        
         <div id="overlay" class="overlay"></div>
         <div class="main-container">
             <div class="service-management">
@@ -282,15 +293,14 @@
 
                 <div class="service-item">
                     <i data-feather="tag"></i>
-
                     <div class="service-details">
                         <strong>Tiền điện</strong><br>
                         1.700đ / KWh <br>
                         <!-- <small>Đang áp dụng cho 15 phòng</small> -->
                     </div>
                     <div class=service-buttons>
-                        <button class="edit">✏️</button>
-                        <button class="delete">🗑️</button>
+                        <button id="editBtn" class="edit">✏️</button>
+                        <button id="deleteBtn" class="delete">🗑️</button>
                     </div>
                 </div>
                 <div class="service-item">
@@ -301,25 +311,25 @@
                         <!-- <small>Đang áp dụng cho 15 phòng</small> -->
                     </div>
                     <div class="service-buttons">
-                        <button class="edit">✏️</button>
-                        <button class="delete">🗑️</button>
+                        <button id="editBtn" class="edit">✏️</button>
+                        <button id="deleteBtn" class="delete">🗑️</button>
                     </div>
                 </div>
 
                 <div class="service-item">
-
                     <i data-feather="tag"></i>
-
                     <div class="service-details">
                         <strong>Tiền wifi</strong><br>
                         100.000đ/ Tháng <br>
                         <!-- <small>Đang áp dụng cho 16 phòng</small> -->
                     </div>
                     <div class="service-buttons">
-                        <button class="edit">✏️</button>
-                        <button class="delete">🗑️</button>
+                        <button id="editBtn" class="edit">✏️</button>
+                        <button id="deleteBtn" class="delete">🗑️</button>
                     </div>
                 </div>
+
+                
             </div>
             <!--Bảng thống kê khách thuê-->
 
@@ -345,7 +355,7 @@
         feather.replace();
     </script>
     <script src="../js/quan-ly-dich-vu.js"></script>
-    <script src = "../js/common.js"></script>
+    <script src="../js/common.js"></script>
 </body>
 
 </html>

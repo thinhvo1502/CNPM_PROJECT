@@ -55,3 +55,9 @@ function addRoom() {
     closeForm();
 }
 
+// form xóa dịch vụ
+
+document.getElementById("deleteBtn").onclick = function (){
+    document.getElementById("deleteConfirmForm").style.display = "flex";
+}
+
